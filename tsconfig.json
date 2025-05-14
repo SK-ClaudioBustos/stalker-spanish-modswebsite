@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@component/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"],
+      "@layout/*": ["src/layout/*"],
+      "@section/*": ["src/section/*"]
+    },
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM"],
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+}

@@ -1,0 +1,18 @@
+@import "./reset.css";
+
+:root {
+    --dark-gray: #464646;
+    --light-gray: #aaaaaa;
+}
+
+* {
+    font-family: system-ui, 'Open Sans', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-image: url('/src/assets/backgrounds/background_0.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
