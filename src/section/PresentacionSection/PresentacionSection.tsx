@@ -2,13 +2,12 @@ import { PresentacionPaginaWeb } from "./PresentacionPaginaWeb";
 import { SeccionAgradecimientos } from "./SeccionAgradecimientos";
 import { SeccionGrupos } from "./SeccionGrupos";
 import "./PresentacionSection.css";
+import { TitleContainer } from "@component/ui/TitleContainer";
 
 export const PresentacionSection = () => {
   return (
     <section className="bienvenidos-section">
-      <div className="title-container">
-        <img src={"./title.webp"} alt="Titulo de la pagina web" />
-      </div>
+      <TitleContainer alt="titulo de la pagina web" imgSrc="./title.webp" />
       <div className="primary-content">
         <PresentacionPaginaWeb />
         <SeccionGrupos />
