@@ -19,10 +19,7 @@
     }
 
     .title-container {
-        margin-top: 2rem;
         height: 100px;
-        display: flex;
-        justify-content: center;
     }
 
     .primary-content {

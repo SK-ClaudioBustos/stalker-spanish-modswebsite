@@ -1,16 +1,28 @@
 @import "./reset.css";
+@import "./global-class.css";
 
 :root {
     --dark-gray: #464646;
     --light-gray: #aaaaaa;
 }
 
+::selection {
+    background-color: var(--light-gray);
+    color: white;
+}
+
+::-moz-selection {
+    background-color: var(--light-gray);
+    color: white;
+}
+
 body {
     font-family: system-ui, 'Open Sans', sans-serif;
     color: #020202;
     scroll-behavior: smooth;
+
     background-image: url('/src/assets/backgrounds/background_0.jpg');
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
 }
