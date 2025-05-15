@@ -3,7 +3,7 @@
 
 :root {
     --dark-gray: #464646;
-    --light-gray: #aaaaaa;
+    --light-gray: #d6d5d5;
 }
 
 ::selection {
@@ -18,7 +18,7 @@
 
 body {
     font-family: system-ui, 'Open Sans', sans-serif;
-    color: #020202;
+    color: var(--light-gray);
     scroll-behavior: smooth;
 
     background-image: url('/src/assets/backgrounds/background_0.jpg');

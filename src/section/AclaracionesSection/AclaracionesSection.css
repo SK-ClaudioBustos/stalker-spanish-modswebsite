@@ -14,17 +14,16 @@
             position: relative;
 
             .content {
-                background-color: rgb(0 0 0 / 60%);
-                padding: .5rem;
+                background-color: rgb(70 70 70 / 60%);
+                padding: .8rem;
                 z-index: 2;
                 bottom: 0;
                 position: absolute;
-                color: #f1f1f1
             }
 
             @media (max-width: 600px) {
                 .content {
-                    background-color: #000;
+                    background-color: var(--dark-gray);
                     position: static;
                 }
             }
