@@ -1,3 +1,5 @@
+import { Youtube } from "@icons/Youtube";
+
 export const SeccionAgradecimientos = () => {
   return (
     <div className="container">
@@ -20,6 +22,7 @@ export const SeccionAgradecimientos = () => {
           <img src="/src/assets/logo_canal.jpg" alt="Logo del canal" />
         </div>
         <span>Seguime en mi canal de YouTube</span>
+        <Youtube />
       </a>
     </div>
   );
