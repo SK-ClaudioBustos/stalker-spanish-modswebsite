@@ -5,11 +5,9 @@
     --light-gray: #aaaaaa;
 }
 
-* {
-    font-family: system-ui, 'Open Sans', sans-serif;
-}
-
 body {
+    font-family: system-ui, 'Open Sans', sans-serif;
+    color: #020202;
     scroll-behavior: smooth;
     background-image: url('/src/assets/backgrounds/background_0.jpg');
     background-position: top;
