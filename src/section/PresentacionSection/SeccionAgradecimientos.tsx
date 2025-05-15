@@ -1,4 +1,5 @@
 import { Youtube } from "@icons/Youtube";
+import LogoCanal from "@assets/logo_canal.jpg";
 
 export const SeccionAgradecimientos = () => {
   return (
@@ -19,7 +20,7 @@ export const SeccionAgradecimientos = () => {
         className="youtube-channel"
       >
         <div className="img-container">
-          <img className="channel-avatar" src="/src/assets/logo_canal.jpg" alt="Logo del canal" />
+          <img className="channel-avatar" src={LogoCanal} alt="Logo del canal" />
         </div>
         <span>Seguime en mi canal de YouTube</span>
         <Youtube />

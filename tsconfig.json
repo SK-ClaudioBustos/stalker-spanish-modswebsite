@@ -6,7 +6,9 @@
       "@styles/*": ["src/styles/*"],
       "@layout/*": ["src/layout/*"],
       "@section/*": ["src/section/*"],
-      "@icons/*": ["src/assets/icons/*"]
+      "@icons/*": ["src/assets/icons/*"],
+      "@assets/*": ["src/assets/*"],
+      "@backgrounds/*": ["src/assets/backgrounds/*"]
     },
     "moduleResolution": "node",
     "jsx": "react-jsx",
