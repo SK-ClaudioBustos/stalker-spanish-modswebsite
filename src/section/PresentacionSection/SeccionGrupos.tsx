@@ -50,7 +50,7 @@ export const SeccionGrupos = () => {
             style={
               {
                 "--bg-color":
-                  item.socialMedia === "discord" ? "#494e8b" : "#0866ff",
+                  item.socialMedia === "discord" ? "#494e8b" : "#295eb4",
               } as CSSProperties
             }
           >
