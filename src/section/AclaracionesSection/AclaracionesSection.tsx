@@ -1,9 +1,9 @@
 import { TitleContainer } from "@component/ui/TitleContainer";
 import "./AclaracionesSection.css";
-import Title from "@assets/img/definiciones_aclaraciones_title.png";
-import Background1 from "@backgrounds/background_1.jpg";
+import Title from "@assets/img/definiciones_aclaraciones_title.webp";
+import Background1 from "@backgrounds/background_1.webp";
 import Background2 from "@backgrounds/background_2.webp";
-import Background3 from "@backgrounds/background_3.jpg";
+import Background3 from "@backgrounds/background_3.webp";
 
 const ACLARACIONES = [
   {

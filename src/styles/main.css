@@ -21,7 +21,7 @@ body {
     color: var(--light-gray);
     scroll-behavior: smooth;
 
-    background-image: url('/src/assets/backgrounds/background_0.jpg');
+    background-image: url('/src/assets/backgrounds/background_0.webp');
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;

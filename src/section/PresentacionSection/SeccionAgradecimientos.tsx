@@ -1,5 +1,5 @@
 import { Youtube } from "@icons/Youtube";
-import LogoCanal from "@assets/logo_canal.jpg";
+import LogoCanal from "@assets/logo_canal.webp";
 
 export const SeccionAgradecimientos = () => {
   return (
