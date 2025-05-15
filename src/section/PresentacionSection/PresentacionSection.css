@@ -1,0 +1,87 @@
+.bienvenidos-section {
+    & p {
+        max-width: 65ch;
+        hyphenate-limit-chars: 7;
+        hyphens: auto;
+        text-align: justify;
+        text-wrap: pretty;
+        line-height: 2.2ch;
+    }
+
+    & h1,
+    h4 {
+        text-align: center;
+    }
+
+    & h4 {
+        text-decoration: underline;
+        margin-bottom: .5rem;
+    }
+
+    .title-container {
+        margin-top: 2rem;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .primary-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        max-width: 700px;
+        margin: 3rem auto;
+        padding: 3rem 0;
+        background-color: rgb(70 70 70 / 69%);
+    }
+
+    .container {
+        width: fit-content;
+    }
+
+    .presentacion-container p {
+        margin: auto;
+    }
+
+    .groups-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: center;
+        margin: 1rem auto 0;
+        width: 85%;
+
+        .group-item {
+            background-color: var(--bg-color);
+            color: #f1f1f1;
+            border-radius: 10px;
+            display: flex;
+            gap: .2rem;
+            padding: .4rem .8rem;
+        }
+    }
+
+    .youtube-channel {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f1f1f1;
+        border-radius: 5px;
+        gap: 1rem;
+        background-color: var(--dark-gray);
+        width: 350px;
+        margin: 1.5rem auto 0 auto;
+
+        & .img-container {
+            width: 64px;
+            height: 64px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+}

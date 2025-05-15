@@ -1,11 +1,11 @@
 import { Layout } from "./layout/Layout";
-import { BienvenidaSection } from "@section/BienvenidaSection/BienvenidaSection";
+import { PresentacionSection } from "@section/PresentacionSection/PresentacionSection";
 import "./styles/main.css";
 
 export const StalkerApp = () => {
   return (
     <Layout>
-      <BienvenidaSection />
+      <PresentacionSection />
     </Layout>
   );
 };
