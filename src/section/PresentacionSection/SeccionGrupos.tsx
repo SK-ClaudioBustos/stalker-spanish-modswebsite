@@ -65,7 +65,6 @@ export const SeccionGrupos = () => {
           </div>
         ))}
       </div>
-      <br />
     </div>
   );
 };

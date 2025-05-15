@@ -19,7 +19,7 @@ export const SeccionAgradecimientos = () => {
         className="youtube-channel"
       >
         <div className="img-container">
-          <img src="/src/assets/logo_canal.jpg" alt="Logo del canal" />
+          <img className="channel-avatar" src="/src/assets/logo_canal.jpg" alt="Logo del canal" />
         </div>
         <span>Seguime en mi canal de YouTube</span>
         <Youtube />

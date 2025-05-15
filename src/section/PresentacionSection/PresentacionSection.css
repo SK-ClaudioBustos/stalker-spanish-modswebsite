@@ -1,5 +1,6 @@
 .bienvenidos-section {
     & p {
+        width: auto;
         max-width: 65ch;
         hyphenate-limit-chars: 7;
         hyphens: auto;
@@ -19,28 +20,31 @@
     }
 
     .title-container {
-        height: 100px;
-    }
-
-    .primary-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-
-        max-width: 700px;
-        margin: 3rem auto;
-        padding: 3rem 0;
-        background-color: rgb(70 70 70 / 69%);
+        height: 8vh;
     }
 
     .container {
         width: fit-content;
     }
 
-    .presentacion-container p {
-        margin: auto;
+    @media (max-width: 768px) {
+        .title-container {
+            height: 50px;
+        }
     }
+
+    .primary-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+        max-width: 700px;
+        margin: 3rem auto;
+        padding: 2rem 5vw;
+        background-color: rgb(70 70 70 / 69%);
+    }
+
 
     .groups-list {
         display: flex;
@@ -56,7 +60,18 @@
             border-radius: 10px;
             display: flex;
             gap: .2rem;
-            padding: .4rem .8rem;
+            padding: .25em .5em;
+            
+            & a {
+                font-size: 1rem;
+            }
+
+            & svg {
+                max-width: 16px;
+                min-width: 8px;
+                width: 10vw;
+                height: auto;
+            }
         }
     }
 
@@ -67,21 +82,25 @@
         justify-content: center;
         color: #f1f1f1;
         border-radius: 5px;
-        gap: .5rem;
+        gap: .5em;
         background-color: var(--dark-gray);
-        margin: 1.5rem auto 0 auto;
+        margin: 1.5em auto 0 auto;
 
         & span {
+            font-size: clamp(.8rem, 2vw, 1rem);
             text-transform: uppercase;
         }
 
-        & .img-container {
-            width: 64px;
-            height: 64px;
+        & .img-container,
+        svg {
+            max-width: 64px;
+            min-width: 32px;
+            width: 12vw;
+            height: auto;
+        }
 
-            img {
-                border-radius: 50%;
-            }
+        & .img-container .channel-avatar {
+            border-radius: 50%;
         }
     }
 }
