@@ -1,1 +1,3 @@
-# Pagina web de mods en español del videojuego S.T.A.L.K.E.R. 
+# ☢ Sitio web de mods en español del videojuego S.T.A.L.K.E.R. 
+
+Este proyecto surgio para dar visibilidad al trabajo hecho por El [Gaucho Stalker](https://www.youtube.com/@elgauchostalker) y la comunidad de STALKER Hispana que colaboraron en conjunto para crear un [PDF](https://drive.google.com/file/d/1aBeHd-cr58Q2hCycG_1abrlsFfcg0uuk/view) en el cual se quiere recopilar todos los mods de STALKER traducidos al español.
