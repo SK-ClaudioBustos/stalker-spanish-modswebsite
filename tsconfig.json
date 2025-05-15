@@ -5,7 +5,8 @@
       "@component/*": ["src/components/*"],
       "@styles/*": ["src/styles/*"],
       "@layout/*": ["src/layout/*"],
-      "@section/*": ["src/section/*"]
+      "@section/*": ["src/section/*"],
+      "@icons/*": ["src/assets/icons/*"]
     },
     "moduleResolution": "node",
     "jsx": "react-jsx",
