@@ -43,8 +43,9 @@ export const SeccionGrupos = () => {
         cuenta!
       </h4>
       <div className="groups-list">
-        {GROUPS_LINKS.map((item) => (
+        {GROUPS_LINKS.map((item, index) => (
           <div
+            key={index}
             className="group-item"
             style={
               {
@@ -58,7 +59,9 @@ export const SeccionGrupos = () => {
             ) : (
               <FacebookIcon />
             )}
-            <a href={item.href}>{item.groupName}</a>
+            <a href={item.href} target="_blank" rel="noopener noreferrer">
+              {item.groupName}
+            </a>
           </div>
         ))}
       </div>
