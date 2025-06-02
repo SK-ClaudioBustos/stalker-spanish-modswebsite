@@ -8,7 +8,11 @@
       "@section/*": ["src/section/*"],
       "@icons/*": ["src/assets/icons/*"],
       "@assets/*": ["src/assets/*"],
-      "@backgrounds/*": ["src/assets/backgrounds/*"]
+      "@backgrounds/*": ["src/assets/backgrounds/*"],
+      "@soc/*": ["src/assets/img/games/SOC/*"],
+      "@cop/*": ["src/assets/img/games/COP/*"],
+      "@cs/*": ["src/assets/img/games/CS/*"],
+      "@data/*": ["src/data/*"]
     },
     "moduleResolution": "node",
     "jsx": "react-jsx",
