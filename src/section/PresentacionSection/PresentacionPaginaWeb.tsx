@@ -1,6 +1,6 @@
 export const PresentacionPaginaWeb = () => {
   return (
-    <div className="container">
+    <section className="container">
       <h4>
         Bienvenidos
       </h4>
@@ -26,6 +26,6 @@ export const PresentacionPaginaWeb = () => {
         en estos grupos que a continuación dejaré.
       </p>
       <br />
-    </div>
+    </section>
   );
 };

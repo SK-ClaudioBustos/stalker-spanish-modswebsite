@@ -30,7 +30,7 @@ export const AclaracionesSection = () => {
   return (
     <section className="aclaraciones-section">
       <TitleContainer alt="titulo seccion aclaraciones" imgSrc={Title} />
-      <div className="aclaraciones-container">
+      <article className="aclaraciones-container">
         {ACLARACIONES.map((item, index) => (
           <article key={index} className="item-aclaracion">
             <img src={item.imgSrc} alt={`titulo sobre ${item.titulo}`} />
@@ -40,7 +40,7 @@ export const AclaracionesSection = () => {
             </div>
           </article>
         ))}
-      </div>
+      </article>
     </section>
   );
 };
