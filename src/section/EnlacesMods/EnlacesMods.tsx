@@ -2,6 +2,7 @@ import { GAMES } from "@data/games.ts";
 import "./EnlacesMods.css";
 import { TitleContainer } from "@component/ui/TitleContainer";
 import Title from "@assets/img/seleccione_un_juego_title.webp";
+import { Link } from "@tanstack/react-router";
 
 export const EnlacesMods = () => {
   return (
@@ -9,8 +10,8 @@ export const EnlacesMods = () => {
       <TitleContainer alt="titulo seccion indice" imgSrc={Title} />
       <div className="indice">
         {GAMES.map((item) => (
-          <a
-            href={item.url}
+          <Link
+            to={item.url}
             rel="noopener noreferrer"
             key={item.year}
             className="indice-item"
@@ -20,7 +21,7 @@ export const EnlacesMods = () => {
               alt={`imagen de ${item.title}`}
               loading="lazy"
             />
-          </a>
+          </Link>
         ))}
       </div>
     </section>
