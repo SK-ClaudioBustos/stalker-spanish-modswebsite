@@ -13,7 +13,8 @@
       "@soc/*": ["src/assets/img/games/SOC/*"],
       "@cop/*": ["src/assets/img/games/COP/*"],
       "@cs/*": ["src/assets/img/games/CS/*"],
-      "@data/*": ["src/data/*"]
+      "@data/*": ["src/data/*"],
+      "@pages/*": ["src/pages/*"]
     },
     "moduleResolution": "node",
     "jsx": "react-jsx",
