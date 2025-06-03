@@ -1,13 +1,13 @@
-import { Layout } from "./layout/Layout";
 import { PresentacionSection } from "@section/PresentacionSection/PresentacionSection";
-import "./styles/main.css";
 import { AclaracionesSection } from "@section/AclaracionesSection/AclaracionesSection";
+import { EnlacesMods } from "@section/EnlacesMods/EnlacesMods";
 
-export const StalkerApp = () => {
+export const Home = () => {
   return (
-    <Layout>
+    <>
       <PresentacionSection />
       <AclaracionesSection />
-    </Layout>
+      <EnlacesMods />
+    </>
   );
 };
