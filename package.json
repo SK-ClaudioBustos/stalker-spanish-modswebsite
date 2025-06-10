@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
     "@tanstack/react-router": "^1.120.13",
     "@tanstack/react-router-devtools": "^1.120.13",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.8",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
@@ -31,6 +33,8 @@
     "vite": "^6.3.5"
   },
   "trustedDependencies": [
-    "@swc/core"
+    "@swc/core",
+    "@tailwindcss/oxide",
+    "esbuild"
   ]
 }

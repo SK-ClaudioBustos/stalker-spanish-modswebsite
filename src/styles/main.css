@@ -1,5 +1,5 @@
-@import "./reset.css";
 @import "./global-class.css";
+@import "tailwindcss";
 
 :root {
     --dark-gray: #464646;
