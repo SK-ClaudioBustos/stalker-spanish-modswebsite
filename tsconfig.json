@@ -14,7 +14,8 @@
       "@cop/*": ["src/assets/img/games/COP/*"],
       "@cs/*": ["src/assets/img/games/CS/*"],
       "@data/*": ["src/data/*"],
-      "@pages/*": ["src/pages/*"]
+      "@pages/*": ["src/pages/*"],
+      "@tipos/*": ["src/types/*"]
     },
     "moduleResolution": "node",
     "jsx": "react-jsx",
