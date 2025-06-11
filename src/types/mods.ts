@@ -13,6 +13,7 @@ export interface Modificacion {
     descripcion: string;
     caracteristicas: string[];
     enlaces: EnlaceMetadata[];
+    isStandalone: boolean;
     imagenesGaleria: string[];
     aclaraciones?: string[];
     pasosInstalacion?: string[];

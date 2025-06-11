@@ -73,6 +73,7 @@ export const SOC_VANILLA_MODS: Modificacion[] = [
       "El mod requiere tener Shadow of Chernobyl ya que se toma el juego base para aplicar las mejoras.",
       "Se deja un tutorial del camrada OmegaKira  para instalarlo.",
     ],
+    isStandalone: false
   },
   {
     autor: "Autumnal Wanderers",
@@ -139,6 +140,7 @@ export const SOC_VANILLA_MODS: Modificacion[] = [
        Gamedata\\Sounds\\Characters_voice\\scenario\\video\\aa2_splash( dos archivos con _l 
        y _r) Alternativamente, descomprima esta carpeta de sus datos de juego y cópiela."`,
     ],
+    isStandalone: false
   },
   {
     autor: "stalker‐mods.clan.su (Ferr‐um)",
@@ -187,5 +189,6 @@ export const SOC_VANILLA_MODS: Modificacion[] = [
     ],
     portadaPath: Portrait3,
     imagenesGaleria: [I03_1, I03_2, I03_3, I03_4],
+    isStandalone: false
   }
 ];
