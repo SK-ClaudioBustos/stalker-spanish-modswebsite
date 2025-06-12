@@ -18,6 +18,12 @@ import I06_2 from "@soc/historia/06/2.webp";
 import I06_3 from "@soc/historia/06/3.webp";
 import I06_4 from "@soc/historia/06/4.webp";
 
+import Portrait7 from "@soc/historia/07/portada.webp";
+import I07_1 from "@soc/historia/07/1.webp";
+import I07_2 from "@soc/historia/07/2.webp";
+import I07_3 from "@soc/historia/07/3.webp";
+import I07_4 from "@soc/historia/07/4.webp";
+
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
     portadaPath: Portrait4,
@@ -132,19 +138,47 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     descripcion: `Es un mod de campaña bastante líneal y llevadero. Es el primero de la 
     trilogía Apocalipsis de los desarrolladores Zaurus & Crew, seguido de S.T.A.L.K.E.R. ‐ Search ‐ DIES IRAE y  S.T.A.L.K.E.R. ‐ Duty ‐ Philosophy of War.`,
     caracteristicas: [
-      'Estable y con buen rendimiento.',
-      'Los enemigos respawnean rápido.',
-      'Los cadáveres se acumulan y no desaparecen.',
-      'Nuevos artefactos.',
-      'Nuevas Armas.'
+      "Estable y con buen rendimiento.",
+      "Los enemigos respawnean rápido.",
+      "Los cadáveres se acumulan y no desaparecen.",
+      "Nuevos artefactos.",
+      "Nuevas Armas.",
     ],
     enlaces: [
       {
-        texto: 'Enlace de descarga',
-        url: 'https://drive.google.com/file/d/1W8wY30DyM2hyp2T3bWpjuENCKVqXyVF_/view?fbclid=IwAR1b8k1C4ykK1BL4Cdz E96ZDsAJls‐KTz0k0qiMcH_ab_4lSX5oda1i0LK8'
-      }
+        texto: "Enlace de descarga",
+        url: "https://drive.google.com/file/d/1W8wY30DyM2hyp2T3bWpjuENCKVqXyVF_/view?fbclid=IwAR1b8k1C4ykK1BL4Cdz E96ZDsAJls‐KTz0k0qiMcH_ab_4lSX5oda1i0LK8",
+      },
     ],
-    isStandalone: true
+    isStandalone: true,
+  },
+  {
+    portadaPath: Portrait7,
+    imagenesGaleria: [I07_1, I07_2, I07_3, I07_4],
+    autor: "Zaurus & Crew",
+    titulo: "S.T.A.L.K.E.R. search dies irae",
+    traduccion: "Cachoale",
+    fecha_lanzamiento: "2011",
+    sinopsis: `Durante el otoño de 2012, la radio de un grupo de búsqueda se estropea y a los  
+    muchachos les quedan pocos suministros. Slaven, un ex soldado francotirador de la Infantería 
+    Naval de Ucrania, decide ir solo a la planta de energía y echar un vistazo. Durante su expedición 
+    por la central eléctrica suceden cosas extrañas que despertarán su interés.`,
+    descripcion: `Este excelente mod es parte de los 5 mods desarrollados por Zaurus & Crew y 
+    están conectados parcialmente entre sí por algunos personajes de Apocalypse, Duty: 
+    Philosophy Of War, Fallen Star ‐ Mercenary's Honor, The Last Stalker.`,
+    caracteristicas: [
+      "Los requerimientos son los mismos que en Shadow of Chernobyl.",
+      "La dificultad se puede catalogar como media.",
+      "La configuración se guarda en la misma carpeta del mod, para no crear conflictos con otros mods instalados o con el propio SOC.",
+      "Addons adaptados por Kamtek que mejoran gráficos y el aspecto técnico",
+    ],
+    enlaces: [
+      {
+        texto: "Enlace de descarga",
+        url: "https://www.mediafire.com/file/740ktmcsht1qtxl/Dies_Irae_Spanish_Standalone_Repack.7z/file",
+      },
+    ],
+    isStandalone: true,
   },
   // {
   //   portadaPath: "",
