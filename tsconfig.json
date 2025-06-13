@@ -15,7 +15,8 @@
       "@cs/*": ["src/assets/img/games/CS/*"],
       "@data/*": ["src/data/*"],
       "@pages/*": ["src/pages/*"],
-      "@tipos/*": ["src/types/*"]
+      "@tipos/*": ["src/types/*"],
+      "@context/*": ["src/context/*"]
     },
     "moduleResolution": "node",
     "jsx": "react-jsx",

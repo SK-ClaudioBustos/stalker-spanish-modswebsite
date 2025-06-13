@@ -3,6 +3,12 @@ export interface EnlaceMetadata {
     texto: string;
 }
 
+export enum TipoMod {
+    VANILLA_MOD,
+    HISTORIA,
+    FREEPLAY
+}
+
 export interface Modificacion {
     portadaPath: string;
     titulo: string;

@@ -1,4 +1,4 @@
-import { ModsList } from "@component/ModsList/ModsList";
+import { StalkerSocMods } from "@pages/StalkerSocMods";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/mods/stalker/shadow-of-chernobyl")({
@@ -6,5 +6,5 @@ export const Route = createFileRoute("/mods/stalker/shadow-of-chernobyl")({
 });
 
 function RouteComponent() {
-  return <ModsList />;
+  return <StalkerSocMods />;
 }
