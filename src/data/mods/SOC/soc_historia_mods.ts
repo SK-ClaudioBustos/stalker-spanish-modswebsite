@@ -24,6 +24,12 @@ import I07_2 from "@soc/historia/07/2.webp";
 import I07_3 from "@soc/historia/07/3.webp";
 import I07_4 from "@soc/historia/07/4.webp";
 
+import Portrait8 from "@soc/historia/08/portada.webp";
+import I08_1 from "@soc/historia/08/1.webp";
+import I08_2 from "@soc/historia/08/2.webp";
+import I08_3 from "@soc/historia/08/3.webp";
+import I08_4 from "@soc/historia/08/4.webp";
+
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
     portadaPath: Portrait4,
@@ -179,6 +185,43 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
       },
     ],
     isStandalone: true,
+  },
+  {
+    portadaPath: Portrait8,
+    imagenesGaleria: [I08_1, I08_2, I08_3, I08_4],
+    autor: "Zaurus & Crew",
+    titulo: "S.T.A.L.K.E.R. DUTY: THE PHOLOSOPHY OF WAR",
+    traduccion: "Kamtek",
+    fecha_lanzamiento: "2012",
+    sinopsis: `Nos centramos en el deber de los soldados y su papel en la guerra. La historia se desarrolla en una nueva 
+    área del juego, donde los jugadores asumen el papel de un miembro del grupo militar Duty, que debe luchar contra 
+    enemigos y tomar decisiones difíciles mientras se enfrenta a las consecuencias de sus acciones.`,
+    descripcion:`El mod es el tercero de la saga de mods que inician con Apocalipsis de Zaurus' Crew, presenta nuevas 
+    misiones y objetivos, así como armas, armaduras y equipos adicionales. Además, los jugadores deben equilibrar su 
+    relación con otros personajes, lo que puede afectar la forma en que otros personajes interactúan con ellos en el 
+    futuro. A esta edición se le ha integrado un pack de armas, se han corregido Bugs, se adaptó a la última versión de 
+    Shadow of Chernobyl para brindar más estabilidad y adicional a ello se agregaron modelos HD para que trabajen 
+    con este Mod.`,
+    caracteristicas: [
+      'Mapas de Call of Pripyat trasladados a Shadow of Chernobyl.',
+      'Añade mejoras gráficas.',
+      'Agrega texturas de alta resolución.',
+      'Nuevos modelos de armas.',
+      'Animaciones mejoradas.',
+      'Añade nuevos ítems.'
+    ],
+    enlaces: [
+      {
+        texto: 'Enlace de descarga',
+        url: 'https://drive.google.com/drive/folders/1J6wbAHBWw2JOiczt-FwKeJMP_M_CGTKZ?fbclid=IwAR1lIJrjWHhJGEmkqVmom1b1-A84pCNqAnQNN5GSxvHslOXzmaBeZNnlk5Y'
+      }
+    ],
+    aclaraciones: [
+      `Repack realizado por Ramon Retamar, por lo que no necesitas ams que descargar y descomprimir.
+       Los savegames y la configuración se guardan en la misma carpeta del mod, para no crear conflictos con los 3 
+       juegos o con otros mods.`
+    ],
+    isStandalone: false
   },
   // {
   //   portadaPath: "",
