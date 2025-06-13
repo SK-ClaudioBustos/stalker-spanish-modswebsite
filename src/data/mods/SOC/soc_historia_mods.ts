@@ -30,6 +30,12 @@ import I08_2 from "@soc/historia/08/2.webp";
 import I08_3 from "@soc/historia/08/3.webp";
 import I08_4 from "@soc/historia/08/4.webp";
 
+import Portrait9 from "@soc/historia/09/portada.webp";
+import I09_1 from "@soc/historia/09/1.webp";
+import I09_2 from "@soc/historia/09/2.webp";
+import I09_3 from "@soc/historia/09/3.webp";
+import I09_4 from "@soc/historia/09/4.webp";
+
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
     portadaPath: Portrait4,
@@ -222,6 +228,45 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
        juegos o con otros mods.`
     ],
     isStandalone: false
+  },
+  {
+    portadaPath: Portrait9,
+    imagenesGaleria: [I09_1, I09_2, I09_3, I09_4],
+    autor: "Zaurus' Crew",
+    titulo: "Fallen Star",
+    traduccion: "Usando google translate",
+    fecha_lanzamiento: "2013",
+    sinopsis: `La historia nos pone en la piel de JJ que tiene la tarea de encontrar 
+    y entregar un vehículo conducido por un personaje que forma parte de la 
+    saga de mods de Zaurus. La misión nos lleva a diferentes lugares y te hace 
+    interferir con la GRC, una corporación estadounidense que alquiló parte de 
+    la Zona y se estableció allí.`,
+    descripcion: `este Mod con historia alternativa para Shadow of Chernobyl es el 
+    cuarto de la serie creada por Zaurus’ Crew, tiene lugar en varios mapas, puede 
+    presentar una dificultad alta, por lo que se recomienda tener a mano una guía, 
+    también puede experimentar varios bugs. Como dato adicional, existe una 
+    secuela llamada “The Last Stalker” pero se encuentra sin traducir.`,
+    caracteristicas: [
+      'Nuevos mapas',
+      'Añade nuevos personajes',
+      'Nuevas Facciones',
+      'Conducción de vehículos',
+      'Se reelaboraron las texturas de la interfaz del inventario de artefactos para una versión adaptada'
+    ],
+    enlaces: [
+      {
+        texto: "Enlace de descarga",
+        url: "https://drive.google.com/drive/folders/1Nmv_nJ109TrQF-gxLDHLdPrDUdOpo8QV"
+      }
+    ],
+    aclaraciones: [
+      `En la carpeta "Fallen Star Language Pack 1.1" están las 
+      traducciones a distintos idiomas, para cambiar el idioma solamente hay que 
+      sobrescribir unos archivos en gamedata, muy simple. 
+      La configuración, los savegames y las capturas de pantalla se guardan en la 
+      misma carpeta del mod.`
+    ],
+    isStandalone: true
   },
   // {
   //   portadaPath: "",
