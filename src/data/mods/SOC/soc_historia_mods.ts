@@ -42,6 +42,12 @@ import I010_2 from "@soc/historia/10/2.webp";
 import I010_3 from "@soc/historia/10/3.webp";
 import I010_4 from "@soc/historia/10/4.webp";
 
+import Portrait11 from "@soc/historia/11/portada.webp";
+import I011_1 from "@soc/historia/11/1.webp";
+import I011_2 from "@soc/historia/11/2.webp";
+import I011_3 from "@soc/historia/11/3.webp";
+import I011_4 from "@soc/historia/11/4.webp";
+
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
     portadaPath: Portrait4,
@@ -208,32 +214,32 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     sinopsis: `Nos centramos en el deber de los soldados y su papel en la guerra. La historia se desarrolla en una nueva 
     área del juego, donde los jugadores asumen el papel de un miembro del grupo militar Duty, que debe luchar contra 
     enemigos y tomar decisiones difíciles mientras se enfrenta a las consecuencias de sus acciones.`,
-    descripcion:`El mod es el tercero de la saga de mods que inician con Apocalipsis de Zaurus' Crew, presenta nuevas 
+    descripcion: `El mod es el tercero de la saga de mods que inician con Apocalipsis de Zaurus' Crew, presenta nuevas 
     misiones y objetivos, así como armas, armaduras y equipos adicionales. Además, los jugadores deben equilibrar su 
     relación con otros personajes, lo que puede afectar la forma en que otros personajes interactúan con ellos en el 
     futuro. A esta edición se le ha integrado un pack de armas, se han corregido Bugs, se adaptó a la última versión de 
     Shadow of Chernobyl para brindar más estabilidad y adicional a ello se agregaron modelos HD para que trabajen 
     con este Mod.`,
     caracteristicas: [
-      'Mapas de Call of Pripyat trasladados a Shadow of Chernobyl.',
-      'Añade mejoras gráficas.',
-      'Agrega texturas de alta resolución.',
-      'Nuevos modelos de armas.',
-      'Animaciones mejoradas.',
-      'Añade nuevos ítems.'
+      "Mapas de Call of Pripyat trasladados a Shadow of Chernobyl.",
+      "Añade mejoras gráficas.",
+      "Agrega texturas de alta resolución.",
+      "Nuevos modelos de armas.",
+      "Animaciones mejoradas.",
+      "Añade nuevos ítems.",
     ],
     enlaces: [
       {
-        texto: 'Enlace de descarga',
-        url: 'https://drive.google.com/drive/folders/1J6wbAHBWw2JOiczt-FwKeJMP_M_CGTKZ?fbclid=IwAR1lIJrjWHhJGEmkqVmom1b1-A84pCNqAnQNN5GSxvHslOXzmaBeZNnlk5Y'
-      }
+        texto: "Enlace de descarga",
+        url: "https://drive.google.com/drive/folders/1J6wbAHBWw2JOiczt-FwKeJMP_M_CGTKZ?fbclid=IwAR1lIJrjWHhJGEmkqVmom1b1-A84pCNqAnQNN5GSxvHslOXzmaBeZNnlk5Y",
+      },
     ],
     aclaraciones: [
       `Repack realizado por Ramon Retamar, por lo que no necesitas ams que descargar y descomprimir.
        Los savegames y la configuración se guardan en la misma carpeta del mod, para no crear conflictos con los 3 
-       juegos o con otros mods.`
+       juegos o con otros mods.`,
     ],
-    isStandalone: false
+    isStandalone: false,
   },
   {
     portadaPath: Portrait9,
@@ -253,26 +259,26 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     también puede experimentar varios bugs. Como dato adicional, existe una 
     secuela llamada “The Last Stalker” pero se encuentra sin traducir.`,
     caracteristicas: [
-      'Nuevos mapas',
-      'Añade nuevos personajes',
-      'Nuevas Facciones',
-      'Conducción de vehículos',
-      'Se reelaboraron las texturas de la interfaz del inventario de artefactos para una versión adaptada'
+      "Nuevos mapas",
+      "Añade nuevos personajes",
+      "Nuevas Facciones",
+      "Conducción de vehículos",
+      "Se reelaboraron las texturas de la interfaz del inventario de artefactos para una versión adaptada",
     ],
     enlaces: [
       {
         texto: "Enlace de descarga",
-        url: "https://drive.google.com/drive/folders/1Nmv_nJ109TrQF-gxLDHLdPrDUdOpo8QV"
-      }
+        url: "https://drive.google.com/drive/folders/1Nmv_nJ109TrQF-gxLDHLdPrDUdOpo8QV",
+      },
     ],
     aclaraciones: [
       `En la carpeta "Fallen Star Language Pack 1.1" están las 
       traducciones a distintos idiomas, para cambiar el idioma solamente hay que 
       sobrescribir unos archivos en gamedata, muy simple. 
       La configuración, los savegames y las capturas de pantalla se guardan en la 
-      misma carpeta del mod.`
+      misma carpeta del mod.`,
     ],
-    isStandalone: true
+    isStandalone: true,
   },
   {
     portadaPath: Portrait10,
@@ -292,30 +298,94 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     alrededor de 60, dandote muchas horas de juego si eres completista. Este mod 
     ha sido muy elogiado y muy recomendado por la comunidad.`,
     caracteristicas: [
-      'Basado en Shadow of Chernobyl.',
-      'Misiones variadas.',
-      'Nuevo sistema de Artefactos.',
-      'Nuevas Mecánicas.',
-      'Añade un paquete de armas.',
-      'Actuaciones de voz.',
-      'Buena optimización'
+      "Basado en Shadow of Chernobyl.",
+      "Misiones variadas.",
+      "Nuevo sistema de Artefactos.",
+      "Nuevas Mecánicas.",
+      "Añade un paquete de armas.",
+      "Actuaciones de voz.",
+      "Buena optimización",
     ],
     enlaces: [
       {
-        texto: 'Enlace de descarga',
-        url: 'https://drive.google.com/drive/folders/1QmI5Pxzik7S1La-kj6U_i-JymX1nd8cM'
+        texto: "Enlace de descarga",
+        url: "https://drive.google.com/drive/folders/1QmI5Pxzik7S1La-kj6U_i-JymX1nd8cM",
       },
       {
-        texto: 'Enlace de descarga de Traduccion',
-        url: 'https://www.moddb.com/games/stalker/addons/stalker-fotograf-mod-traduccin-al-espaol'
-      }
+        texto: "Enlace de descarga de Traduccion",
+        url: "https://www.moddb.com/games/stalker/addons/stalker-fotograf-mod-traduccin-al-espaol",
+      },
     ],
     aclaraciones: [
       `Traducción al español en colaboración con Qokd y ayuda de 
        Kamtek. La mismt se encuentra al 99% excepto noticias dinámicas del PDA, 
-       ciertas etiquetas de armas y misiones.`
+       ciertas etiquetas de armas y misiones.`,
     ],
-    isStandalone: true
+    isStandalone: true,
+  },
+  {
+    portadaPath: Portrait11,
+    imagenesGaleria: [I011_1, I011_2, I011_3, I011_4],
+    autor: "dez0wave",
+    titulo: "Lost Alpha Developer's Cut",
+    traduccion: "Keisirius",
+    fecha_lanzamiento: "2014",
+    sinopsis: `Eres rescatado luego  de  un  accidente  en  los  camiones  de  la muerte,  tras  despertar has  
+    perdido la memoria y tu única pista es tu PDA con la misión de matar a un tal Strelok. La búsqueda por 
+    recuperar la memoria y encontrar a Strelok te lleva a recorrer la Zona de exclusión.`,
+    descripcion: `este mod nace de versiones previas al lanzamiento del primer S.T.A.L.K.E.R., el 
+    equipo desarrollador se dispuso a recopilar información, bluids antiguas, recrear mapas y 
+    conceptos que se habían eliminado en la versión final del juego. Lost Alpha es un 
+    desarrollo que expande el título  original convirtiéndolo en una nueva experiencia.`,
+    caracteristicas: [
+      'Nuevos Mapas.',
+      'Nuevos trajes, armas y artefactos.',
+      'Gráficos mejorados.',
+      'Sistema de conducción.',
+      'Nuevos mutantes.',
+      'Historia expandida.'
+    ],
+    enlaces: [
+      {
+        texto: "Enlace descarga parte 1",
+        url: "https://www.moddb.com/mods/lost-alpha/downloads/stalker-lost-alpha-v14007-dc-1-of-6",
+      },
+      {
+        texto: "Enlace descarga parte 2",
+        url: "https://www.moddb.com/mods/lost-alpha/downloads/stalker-lost-alpha-v14007-dc-2-of-6",
+      },
+      {
+        texto: "Enlace descarga parte 3",
+        url: "https://www.moddb.com/mods/lost-alpha/downloads/stalker-lost-alpha-v14007-dc-3-of-6",
+      },
+      {
+        texto: "Enlace descarga parte 4",
+        url: "https://www.moddb.com/mods/lost-alpha/downloads/stalker-lost-alpha-v14007-dc-4-of-6",
+      },
+      {
+        texto: "Enlace descarga parte 5",
+        url: "https://www.moddb.com/mods/lost-alpha/downloads/stalker-lost-alpha-v14007-dc-5-of-6",
+      },
+      {
+        texto: "Enlace descarga parte 6",
+        url: "https://www.moddb.com/mods/lost-alpha/downloads/stalker-lost-alpha-v14007-dc-6-of-6",
+      },
+      {
+        texto: "Enlace de descarga de traducción",
+        url: "https://www.moddb.com/mods/lost-alpha/addons/stalker-lost-alpha-extended-traduccin-en-espaol-v14007792",
+      },
+      {
+        texto: "Enlace descarga parche de correcion",
+        url: "https://www.moddb.com/downloads/arreglo-de-traduccion-a-espaol-para-stalker-lost-alpha",
+      },
+    ],
+    aclaraciones: [
+      'extrae la carpeta "gamedata" en el directorio  principal del juego y sustituye todos los archivos en caso de que te lo pida.',
+      'La traducción no tiene "tildes" ni "ñ" alguna, puesto que el juego no lo soporta dado que el inglés y el ruso no las usan, en vez de "ñ" puse "nh" que la fonética suena similar',
+      "La versión de kamtek es la 0.4 y arregla algunos errores de la traducción de Keisirius.",
+      "esta versión es Lost Alpha Developer’s cut, la cual se desprende del Lost Alpha original. No confundir con Lost Alpha DC Extended ya  que no son exactamente lo mismo.",
+    ],
+    isStandalone: false,
   },
   // {
   //   portadaPath: "",
@@ -331,7 +401,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
   //   {
   //    texto: '',
   //    url: ''
-  //   s}
+  //   }
   //   ],
   //   aclaraciones: [],
   //   pasosInstalacion: [],
