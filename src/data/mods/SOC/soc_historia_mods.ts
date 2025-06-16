@@ -54,6 +54,12 @@ import I012_2 from "@soc/historia/12/2.webp";
 import I012_3 from "@soc/historia/12/3.webp";
 import I012_4 from "@soc/historia/12/4.webp";
 
+import Portrait13 from "@soc/historia/13/portada.webp";
+import I013_1 from "@soc/historia/13/1.webp";
+import I013_2 from "@soc/historia/13/2.webp";
+import I013_3 from "@soc/historia/13/3.webp";
+import I013_4 from "@soc/historia/13/4.webp";
+
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
     portadaPath: Portrait4,
@@ -464,6 +470,62 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
        Por último la traducción al español (copiar o arrastrar el contenido de la traducción en 
        el directorio del mod y darle en reemplazar si a todo) - Traducción al 99%, faltan las 
        noticias dinámicas del PDA.`,
+    ],
+    isStandalone: true,
+  },
+  {
+    portadaPath: Portrait13,
+    imagenesGaleria: [I013_1, I013_2, I013_3, I013_4],
+    autor: "Blackneed  - AMK Team",
+    titulo: "Left To Die Enhaced Edition",
+    traduccion: "Kamtek",
+    fecha_lanzamiento: "2018",
+    sinopsis: `El joven Sergey viaja desde la ciudad al campo para despejar la mente, luego 
+    de un par de semanas, 2 sujetos extraños invaden su campamento y ante la hostilidad, 
+    Sergey se defiende utilizando un hacha. El violento episodio lo impulsa a correr hacia la 
+    granja más cercana y desde ahí tendrá que sobrevivir recorriendo varios lugares mientras 
+    se enfrenta ante una amenaza zombis y los secretos tras este desastre.`,
+    descripcion: `Mod Basado en el motor de Stalker pero presentando un apocalipsis zombi 
+    en lugar de lo que acostumbramos, también incluye una serie de mejoras estéticas y 
+    correcciones únicas directamente desde los foros Rusos. La historia no es lineal pero 
+    presenta un secreto que iremos revelando mientras avanzamos. A medida que 
+    progresemos, habrá personajes que nos darán misiones impulsándonos a distintas 
+    ubicaciones.`,
+    caracteristicas: [
+      "Nuevos Mapas.",
+      "Nuevas armas e ítem pero los mismos son escasos.",
+      "Se añaden como enemigos Zombies, animales, militares y supervivientes.",
+      "Se refinan mecánicas conocidas como sed, hambre y sueño.",
+      "Requisitos por encima de Shadow of Chernobyl.",
+    ],
+    enlaces: [
+      {
+        texto: "Enlace de descarga de la traducción",
+        url: "https://www.moddb.com/games/stalker/downloads/left-to-die-enhaced-edition-espaol",
+      },
+      {
+        texto: "Enlace del setup",
+        url: "https://drive.google.com/file/d/1FwyE1-fXtL58HWZcQDOB_0P518jYQZ8Z/view",
+      },
+      {
+        texto: "Enlace de descarga parte 1",
+        url: "https://drive.google.com/file/d/1M5DAE06s5y8J_V1NY-mNzi6X9JPpBUkt/view",
+      },
+      {
+        texto: "Enlace de descarga parte 2",
+        url: "https://drive.google.com/file/d/1Bg5FTRevWRd2K1qDi6aswgHiVqvVzssC/view",
+      },
+      {
+        texto: "Enlace alternativo de descarga",
+        url: "https://drive.google.com/drive/folders/1OOBepgjYBZhwlhd8hHeFb8dEpSyy5o2m?fbclid=IwAR0K6B9X11K6jiA2Bt",
+      },
+    ],
+    aclaraciones: [
+      `Para instalar deben presionar en el ejecutable (Left To Die.exe) y al abrirse la ventana 
+      presionar "Extract”. Ahora tendrán que esperar y una vez que finalice la extracción 
+      (Requiere alrededor de 10GB de espacio) deben buscar el ejecutable del Mod y crear 
+      un acceso directo.`,
+      "Este Mod consume bastantes recursos y no es posible ejecutarlo en iluminación estática.",
     ],
     isStandalone: true,
   },
