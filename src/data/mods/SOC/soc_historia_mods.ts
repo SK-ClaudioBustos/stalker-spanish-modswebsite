@@ -48,6 +48,12 @@ import I011_2 from "@soc/historia/11/2.webp";
 import I011_3 from "@soc/historia/11/3.webp";
 import I011_4 from "@soc/historia/11/4.webp";
 
+import Portrait12 from "@soc/historia/12/portada.webp";
+import I012_1 from "@soc/historia/12/1.webp";
+import I012_2 from "@soc/historia/12/2.webp";
+import I012_3 from "@soc/historia/12/3.webp";
+import I012_4 from "@soc/historia/12/4.webp";
+
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
     portadaPath: Portrait4,
@@ -338,12 +344,12 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     conceptos que se habían eliminado en la versión final del juego. Lost Alpha es un 
     desarrollo que expande el título  original convirtiéndolo en una nueva experiencia.`,
     caracteristicas: [
-      'Nuevos Mapas.',
-      'Nuevos trajes, armas y artefactos.',
-      'Gráficos mejorados.',
-      'Sistema de conducción.',
-      'Nuevos mutantes.',
-      'Historia expandida.'
+      "Nuevos Mapas.",
+      "Nuevos trajes, armas y artefactos.",
+      "Gráficos mejorados.",
+      "Sistema de conducción.",
+      "Nuevos mutantes.",
+      "Historia expandida.",
     ],
     enlaces: [
       {
@@ -387,6 +393,80 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     ],
     isStandalone: false,
   },
+  {
+    portadaPath: Portrait12,
+    imagenesGaleria: [I012_1, I012_2, I012_3, I012_4],
+    autor: "OGSR Team",
+    titulo: "Ogse Old Good Stalker EVOLUTION 0.6.9.3",
+    traduccion: "Manu Flores con ayuda de Qokd y Kamtek",
+    fecha_lanzamiento: "04/08/2016",
+    sinopsis: `Eres rescatado luego de un accidente en los camiones de la muerte, tras 
+    despertar has perdido la memoria y tu única pista es tu PDA con la misión de matar a 
+    un tal Strelok. La búsqueda por recuperar la memoria y encontrar a Strelok te lleva a 
+    recorrer la Zona de exclusión.`,
+    descripcion: `Mod global para Stalker Shadow of Chernobyl destinado a recrear una 
+    Zona altamente atmosférica con la mayor calidad posible, estabilidad del juego, 
+    jugabilidad y lealtad a los cánones del género Sci‐Fi. OGSE deja la misión principal y 
+    las misiones secundarias del SOC del juego base prácticamente intacta, pero se basa 
+    en ellas para ampliar la experiencia a la que la saga original nos tenía acostumbrados.`,
+    caracteristicas: [
+      "Nuevos Mapas y algunos modificados.",
+      "Nuevas, armas e ítems.",
+      "Se añaden nuevas misiones y personajes.",
+      "Nuevas mecánicas.",
+      "Nuevos mutantes.",
+      "Historia expandida.",
+      "Mejor estabilidad y rendimiento.",
+      "Añade mejoras gráficas.",
+    ],
+    enlaces: [
+      {
+        texto: "Enlace de descarga parte 1",
+        url: "https://www.moddb.com/mods/old-good-stalker-evolution/downloads/ogse-0693-final-20-standalone-part-1",
+      },
+      {
+        texto: "Enlace de descarga parte 2",
+        url: "https://www.moddb.com/mods/old-good-stalker-evolution/downloads/ogse-0693-final-20-standalone-part-2",
+      },
+      {
+        texto: "Enlace de descarga parte 3",
+        url: "https://www.moddb.com/mods/old-good-stalker-evolution/downloads/ogse-0693-final-20-standalone-part-3",
+      },
+      {
+        texto: "Enlace de descarga parte 4",
+        url: "https://www.moddb.com/mods/old-good-stalker-evolution/downloads/ogse-0693-final-20-standalone-part-4",
+      },
+      {
+        texto: "Enlace de descarga parte 5",
+        url: "https://www.moddb.com/mods/old-good-stalker-evolution/downloads/ogse-0693-final-20-standalone-part-5",
+      },
+      {
+        texto: "Enlace de descarga parte 6",
+        url: "https://www.moddb.com/mods/old-good-stalker-evolution/downloads/ogse-0693-final-20-standalone-part-6",
+      },
+      {
+        texto: "Enlace de parche 2.10",
+        url: "https://www.moddb.com/mods/old-good-stalker-evolution/downloads/ogse-0693-final-20-standalone-patch-210r",
+      },
+      {
+        texto: "Enlace de parche Fix",
+        url: "https://www.moddb.com/mods/old-good-stalker-evolution/downloads/stalker-ogse-0693-patch-2-10-revised-fix2",
+      },
+      {
+        texto: "Enlace de descarga de traducción",
+        url: "https://www.moddb.com/games/stalker/addons/stalker-old-good-stalker-evolution-0693-en-espaol",
+      },
+    ],
+    aclaraciones: [
+      `Instalar en el siguiente orden hasta la traducción (al instalar un 
+       parche siempre abrir y cerrar antes y después el juego hacer lo mismo con la traducción 
+       para que se creen las carpetas correspondientes).
+       Por último la traducción al español (copiar o arrastrar el contenido de la traducción en 
+       el directorio del mod y darle en reemplazar si a todo) - Traducción al 99%, faltan las 
+       noticias dinámicas del PDA.`,
+    ],
+    isStandalone: true,
+  },
   // {
   //   portadaPath: "",
   //   imagenesGaleria: [],
@@ -398,13 +478,13 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
   //   descripcion: ``,
   //   caracteristicas: [],
   //   enlaces: [
-  //   {
-  //    texto: '',
-  //    url: ''
-  //   }
+  //     {
+  //       texto: "",
+  //       url: "",
+  //     },
   //   ],
   //   aclaraciones: [],
   //   pasosInstalacion: [],
-  //   isStandalone: false
+  //   isStandalone: false,
   // },
 ];
