@@ -60,6 +60,12 @@ import I013_2 from "@soc/historia/13/2.webp";
 import I013_3 from "@soc/historia/13/3.webp";
 import I013_4 from "@soc/historia/13/4.webp";
 
+import Portrait14 from "@soc/historia/14/portada.webp";
+import I014_1 from "@soc/historia/14/1.webp";
+import I014_2 from "@soc/historia/14/2.webp";
+import I014_3 from "@soc/historia/14/3.webp";
+import I014_4 from "@soc/historia/14/4.webp";
+
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
     portadaPath: Portrait4,
@@ -526,6 +532,42 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
       (Requiere alrededor de 10GB de espacio) deben buscar el ejecutable del Mod y crear 
       un acceso directo.`,
       "Este Mod consume bastantes recursos y no es posible ejecutarlo en iluminación estática.",
+    ],
+    isStandalone: true,
+  },
+  {
+    portadaPath: Portrait14,
+    imagenesGaleria: [I014_1, I014_2, I014_3, I014_4],
+    autor: "Zekhan",
+    titulo: "Goldsphere Completion",
+    traduccion: "Google Translate",
+    fecha_lanzamiento: "08/09/2018",
+    sinopsis: `Un Stalker novato debe saldar varias cuentas por lo que decide intentar 
+    ingresar a la Zona burlando el perímetro, pero es capturado por los militares y 
+    encarcelado. Ahora deberá pensar un plan de escape y lograr su objetivo en la Zona.`,
+    descripcion: `Mod muy famoso basado libremente en el libro Roadside Piknic, el 
+    mismo suele corromper las partidas, a pesar de ese defecto, el mod añade mucho 
+    contenido interesante por lo cual vale la pena probarlo.`,
+    caracteristicas: [
+      "Añade un sistema de reputación.",
+      "Agrega un elaborado sistema de supervivencia (desde provisiones hasta cocina).",
+      "La baja salud afecta las acciones del jugador.",
+      "Permite llevar compañeros.",
+      "Se pueden reparar autos y obtener partes.",
+      "Nuevos artefactos.",
+    ],
+    enlaces: [
+      {
+        texto: "Enlace de descarga",
+        url: "https://disk.yandex.ru/d/8ruKmVoz3LYVns?fbclid=IwAR2nAHuc0VBZfm8MlyVRE2THMifg3ZE1JNhTB_SwxEKS7rnu 2Yq4YX8yjEc",
+      },
+      {
+        texto: "Enlace de descarga de traducción",
+        url: "http://www.mediafire.com/file/3cjkedfl04k110a/Golden+Ball++Completion+Language+Pack+1.0.zip?fbclid=IwAR2m4VrlM2RL91jOD4A3fJC3MlUNHUwX6Sd_MRbhPD6‐1SynA37VQZVBOnI",
+      },
+    ],
+    aclaraciones: [
+      "La traducción se descomprime y se copian y pegan los archivos en gamedata, solo revisa las rutas de instalación.",
     ],
     isStandalone: true,
   },
