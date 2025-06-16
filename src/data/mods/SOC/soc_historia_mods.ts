@@ -36,6 +36,12 @@ import I09_2 from "@soc/historia/09/2.webp";
 import I09_3 from "@soc/historia/09/3.webp";
 import I09_4 from "@soc/historia/09/4.webp";
 
+import Portrait10 from "@soc/historia/10/portada.webp";
+import I010_1 from "@soc/historia/10/1.webp";
+import I010_2 from "@soc/historia/10/2.webp";
+import I010_3 from "@soc/historia/10/3.webp";
+import I010_4 from "@soc/historia/10/4.webp";
+
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
     portadaPath: Portrait4,
@@ -268,6 +274,49 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     ],
     isStandalone: true
   },
+  {
+    portadaPath: Portrait10,
+    imagenesGaleria: [I010_1, I010_2, I010_3, I010_4],
+    autor: "Team FOTO",
+    titulo: "F.O.T.O.G.R.A.F.",
+    traduccion: "Manu Flores con ayuda de Kamtek y Qokd",
+    fecha_lanzamiento: "13/12/2013",
+    sinopsis: `Un fotografo, reportero de guerra, viaja a la Zona “antes del comienzo 
+    de los tiempos”, cuando aún no se ha determinado nada, cuando no existen 
+    principios conocidos ni leyes establecidas, cuando sólo existe un “Algo” 
+    misterioso y desconocido que tendrá ser descubierto, habiendo encontrado 
+    cosas misteriosas e inexplicables en el camino, fenómenos y secretos.`,
+    descripcion: `este Mod esta basado en Shadow of Chernóbyl y presenta un 
+    gameplay que mezcla la nvestigación, aventura y superviviencia. Cuenta con 
+    una gran variedad de misiones de historia y secundarias, siendo estas ultimas 
+    alrededor de 60, dandote muchas horas de juego si eres completista. Este mod 
+    ha sido muy elogiado y muy recomendado por la comunidad.`,
+    caracteristicas: [
+      'Basado en Shadow of Chernobyl.',
+      'Misiones variadas.',
+      'Nuevo sistema de Artefactos.',
+      'Nuevas Mecánicas.',
+      'Añade un paquete de armas.',
+      'Actuaciones de voz.',
+      'Buena optimización'
+    ],
+    enlaces: [
+      {
+        texto: 'Enlace de descarga',
+        url: 'https://drive.google.com/drive/folders/1QmI5Pxzik7S1La-kj6U_i-JymX1nd8cM'
+      },
+      {
+        texto: 'Enlace de descarga de Traduccion',
+        url: 'https://www.moddb.com/games/stalker/addons/stalker-fotograf-mod-traduccin-al-espaol'
+      }
+    ],
+    aclaraciones: [
+      `Traducción al español en colaboración con Qokd y ayuda de 
+       Kamtek. La mismt se encuentra al 99% excepto noticias dinámicas del PDA, 
+       ciertas etiquetas de armas y misiones.`
+    ],
+    isStandalone: true
+  },
   // {
   //   portadaPath: "",
   //   imagenesGaleria: [],
@@ -278,7 +327,12 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
   //   sinopsis: ``,
   //   descripcion: ``,
   //   caracteristicas: [],
-  //   enlaces: [],
+  //   enlaces: [
+  //   {
+  //    texto: '',
+  //    url: ''
+  //   s}
+  //   ],
   //   aclaraciones: [],
   //   pasosInstalacion: [],
   //   isStandalone: false
