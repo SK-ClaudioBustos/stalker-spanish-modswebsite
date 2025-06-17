@@ -1,6 +1,6 @@
 import { PresentacionSection } from "@section/PresentacionSection/PresentacionSection";
 import { AclaracionesSection } from "@section/AclaracionesSection/AclaracionesSection";
-import { EnlacesMods } from "@section/EnlacesMods/EnlacesMods";
+import { EnlacesMods } from "@section/EnlacesMods";
 
 export const Home = () => {
   return (
