@@ -1,6 +1,13 @@
 export const FacebookIcon = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="url(#a)" viewBox="0 0 36 36" width={25} height={25}>
+    <svg
+      className="max-w-4 min-w-2 w-[10vw] h-auto"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="url(#a)"
+      viewBox="0 0 36 36"
+      width={25}
+      height={25}
+    >
       <defs>
         <linearGradient id="a" x1="50%" x2="50%" y1="97.078%" y2="0%">
           <stop offset="0%" stopColor="#0062E0" />

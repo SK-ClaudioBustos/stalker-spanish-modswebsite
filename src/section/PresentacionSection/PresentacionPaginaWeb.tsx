@@ -1,10 +1,10 @@
 export const PresentacionPaginaWeb = () => {
   return (
-    <section className="container">
-      <h4>
+    <section className="w-fit">
+      <h4 className="text-center mb-2 underline">
         Bienvenidos
       </h4>
-      <p>
+      <p className="w-auto max-w-[65ch] hyphens-auto text-justify text-pretty leading-[2.2ch]">
         Hola camaradas, soy el Gaucho Stalker, en esta pagina van a encontrar una 
         recopilación de todos los mods que han sido traducidos al español. Una
         ardua tarea que me ha llevado tiempo y quiero compartirla con ustedes.

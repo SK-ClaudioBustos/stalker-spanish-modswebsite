@@ -1,11 +1,11 @@
-export const Youtube = () => {
+export const Youtube = ({ className }: { className: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="64"
       height="64"
       viewBox="0 0 256 180"
-      className="developer-icons group-hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.1)] dark:group-hover:drop-shadow-[0_4px_4px_rgba(256,256,256,0.1)]"
+      className={className}
       preserveAspectRatio="xMidYMid"
     >
       <path
