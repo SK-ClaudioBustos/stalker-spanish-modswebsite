@@ -1,4 +1,4 @@
-export const PresentacionPaginaWeb = () => {
+export const SeccionPresentacion = () => {
   return (
     <section className="w-fit">
       <h4 className="text-center mb-2 underline">

@@ -1,5 +1,5 @@
 import { GROUPS_LINKS } from "@data/grupos";
-import { GroupItem } from "@component/Groups/GroupItem";
+import { GroupItem } from "./GroupItem";
 
 export const SeccionGrupos = () => {
   return (
