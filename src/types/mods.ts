@@ -10,6 +10,7 @@ export enum TipoMod {
 }
 
 export interface Modificacion {
+    id: string;
     portadaPath: string;
     titulo: string;
     autor: string;

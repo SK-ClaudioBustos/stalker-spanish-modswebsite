@@ -19,6 +19,7 @@ import I03_4 from "@soc/vanilla_mods/03/4.webp";
 
 export const SOC_VANILLA_MODS: Modificacion[] = [
   {
+    id: "1",
     autor: "Artistpavel, Argus, Trojanuch, Sergy172",
     traduccion: "Vanilla",
     titulo: "Shadow Of Chernobyl Complete mod 1.5",
@@ -76,6 +77,7 @@ export const SOC_VANILLA_MODS: Modificacion[] = [
     isStandalone: false
   },
   {
+    id: "2",
     autor: "Autumnal Wanderers",
     titulo: "Autumn aurora",
     traduccion: "Davoker (basada en wardust)",
@@ -143,6 +145,7 @@ export const SOC_VANILLA_MODS: Modificacion[] = [
     isStandalone: false
   },
   {
+    id: "3",
     autor: "stalker‐mods.clan.su (Ferr‐um)",
     titulo: "STALKER SHADOW OF CHERNOBYL UPDATE 1.4.2",
     traduccion: "Kamtek & Danruhard Tenno",

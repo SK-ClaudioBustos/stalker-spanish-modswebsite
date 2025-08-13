@@ -68,6 +68,7 @@ import I014_4 from "@soc/historia/14/4.webp";
 
 export const SOC_HISTORIA_MODS: Modificacion[] = [
   {
+    id: "4",
     portadaPath: Portrait4,
     imagenesGaleria: [I04_1, I04_2, I04_3, I04_4],
     autor: "Balhash Brothers Team",
@@ -129,6 +130,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   {
+    id: "5",
     portadaPath: Portrait5,
     imagenesGaleria: [I05_1, I05_2, I05_3, I05_4],
     autor: "dez0wave",
@@ -167,6 +169,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   {
+    id: "6",
     portadaPath: Portrait6,
     imagenesGaleria: [I06_1, I06_2, I06_3, I06_4],
     autor: "Zaurus & Crew",
@@ -195,6 +198,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   {
+    id: "7",
     portadaPath: Portrait7,
     imagenesGaleria: [I07_1, I07_2, I07_3, I07_4],
     autor: "Zaurus & Crew",
@@ -223,6 +227,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   {
+    id: "8",
     portadaPath: Portrait8,
     imagenesGaleria: [I08_1, I08_2, I08_3, I08_4],
     autor: "Zaurus & Crew",
@@ -260,6 +265,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: false,
   },
   {
+    id: "9",
     portadaPath: Portrait9,
     imagenesGaleria: [I09_1, I09_2, I09_3, I09_4],
     autor: "Zaurus' Crew",
@@ -299,6 +305,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   {
+    id: "10",
     portadaPath: Portrait10,
     imagenesGaleria: [I010_1, I010_2, I010_3, I010_4],
     autor: "Team FOTO",
@@ -342,6 +349,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   {
+    id: "11",
     portadaPath: Portrait11,
     imagenesGaleria: [I011_1, I011_2, I011_3, I011_4],
     autor: "dez0wave",
@@ -406,6 +414,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: false,
   },
   {
+    id: "12",
     portadaPath: Portrait12,
     imagenesGaleria: [I012_1, I012_2, I012_3, I012_4],
     autor: "OGSR Team",
@@ -480,6 +489,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   {
+    id: "13",
     portadaPath: Portrait13,
     imagenesGaleria: [I013_1, I013_2, I013_3, I013_4],
     autor: "Blackneed  - AMK Team",
@@ -536,6 +546,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   {
+    id: "14",
     portadaPath: Portrait14,
     imagenesGaleria: [I014_1, I014_2, I014_3, I014_4],
     autor: "Zekhan",
@@ -572,6 +583,7 @@ export const SOC_HISTORIA_MODS: Modificacion[] = [
     isStandalone: true,
   },
   // {
+  //   id: "15",
   //   portadaPath: "",
   //   imagenesGaleria: [],
   //   autor: "",
