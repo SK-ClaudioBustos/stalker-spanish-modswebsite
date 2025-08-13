@@ -15,6 +15,7 @@ import { Route as IndexImport } from './routes/index'
 import { Route as ModsStalkerShadowOfChernobylImport } from './routes/mods/stalker/shadow-of-chernobyl'
 import { Route as ModsStalkerClearSkyImport } from './routes/mods/stalker/clear-sky'
 import { Route as ModsStalkerCallOfPripyatImport } from './routes/mods/stalker/call-of-pripyat'
+import { Route as ModsStalkerModFolderModModIdImport } from './routes/mods/stalker/$modFolder/mod.$modId'
 
 // Create/Update Routes
 
@@ -42,6 +43,13 @@ const ModsStalkerCallOfPripyatRoute = ModsStalkerCallOfPripyatImport.update({
   path: '/mods/stalker/call-of-pripyat',
   getParentRoute: () => rootRoute,
 } as any)
+
+const ModsStalkerModFolderModModIdRoute =
+  ModsStalkerModFolderModModIdImport.update({
+    id: '/mods/stalker/$modFolder/mod/$modId',
+    path: '/mods/stalker/$modFolder/mod/$modId',
+    getParentRoute: () => rootRoute,
+  } as any)
 
 // Populate the FileRoutesByPath interface
 
@@ -75,6 +83,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ModsStalkerShadowOfChernobylImport
       parentRoute: typeof rootRoute
     }
+    '/mods/stalker/$modFolder/mod/$modId': {
+      id: '/mods/stalker/$modFolder/mod/$modId'
+      path: '/mods/stalker/$modFolder/mod/$modId'
+      fullPath: '/mods/stalker/$modFolder/mod/$modId'
+      preLoaderRoute: typeof ModsStalkerModFolderModModIdImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -85,6 +100,7 @@ export interface FileRoutesByFullPath {
   '/mods/stalker/call-of-pripyat': typeof ModsStalkerCallOfPripyatRoute
   '/mods/stalker/clear-sky': typeof ModsStalkerClearSkyRoute
   '/mods/stalker/shadow-of-chernobyl': typeof ModsStalkerShadowOfChernobylRoute
+  '/mods/stalker/$modFolder/mod/$modId': typeof ModsStalkerModFolderModModIdRoute
 }
 
 export interface FileRoutesByTo {
@@ -92,6 +108,7 @@ export interface FileRoutesByTo {
   '/mods/stalker/call-of-pripyat': typeof ModsStalkerCallOfPripyatRoute
   '/mods/stalker/clear-sky': typeof ModsStalkerClearSkyRoute
   '/mods/stalker/shadow-of-chernobyl': typeof ModsStalkerShadowOfChernobylRoute
+  '/mods/stalker/$modFolder/mod/$modId': typeof ModsStalkerModFolderModModIdRoute
 }
 
 export interface FileRoutesById {
@@ -100,6 +117,7 @@ export interface FileRoutesById {
   '/mods/stalker/call-of-pripyat': typeof ModsStalkerCallOfPripyatRoute
   '/mods/stalker/clear-sky': typeof ModsStalkerClearSkyRoute
   '/mods/stalker/shadow-of-chernobyl': typeof ModsStalkerShadowOfChernobylRoute
+  '/mods/stalker/$modFolder/mod/$modId': typeof ModsStalkerModFolderModModIdRoute
 }
 
 export interface FileRouteTypes {
@@ -109,18 +127,21 @@ export interface FileRouteTypes {
     | '/mods/stalker/call-of-pripyat'
     | '/mods/stalker/clear-sky'
     | '/mods/stalker/shadow-of-chernobyl'
+    | '/mods/stalker/$modFolder/mod/$modId'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/mods/stalker/call-of-pripyat'
     | '/mods/stalker/clear-sky'
     | '/mods/stalker/shadow-of-chernobyl'
+    | '/mods/stalker/$modFolder/mod/$modId'
   id:
     | '__root__'
     | '/'
     | '/mods/stalker/call-of-pripyat'
     | '/mods/stalker/clear-sky'
     | '/mods/stalker/shadow-of-chernobyl'
+    | '/mods/stalker/$modFolder/mod/$modId'
   fileRoutesById: FileRoutesById
 }
 
@@ -129,6 +150,7 @@ export interface RootRouteChildren {
   ModsStalkerCallOfPripyatRoute: typeof ModsStalkerCallOfPripyatRoute
   ModsStalkerClearSkyRoute: typeof ModsStalkerClearSkyRoute
   ModsStalkerShadowOfChernobylRoute: typeof ModsStalkerShadowOfChernobylRoute
+  ModsStalkerModFolderModModIdRoute: typeof ModsStalkerModFolderModModIdRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -136,6 +158,7 @@ const rootRouteChildren: RootRouteChildren = {
   ModsStalkerCallOfPripyatRoute: ModsStalkerCallOfPripyatRoute,
   ModsStalkerClearSkyRoute: ModsStalkerClearSkyRoute,
   ModsStalkerShadowOfChernobylRoute: ModsStalkerShadowOfChernobylRoute,
+  ModsStalkerModFolderModModIdRoute: ModsStalkerModFolderModModIdRoute,
 }
 
 export const routeTree = rootRoute
@@ -151,7 +174,8 @@ export const routeTree = rootRoute
         "/",
         "/mods/stalker/call-of-pripyat",
         "/mods/stalker/clear-sky",
-        "/mods/stalker/shadow-of-chernobyl"
+        "/mods/stalker/shadow-of-chernobyl",
+        "/mods/stalker/$modFolder/mod/$modId"
       ]
     },
     "/": {
@@ -165,6 +189,9 @@ export const routeTree = rootRoute
     },
     "/mods/stalker/shadow-of-chernobyl": {
       "filePath": "mods/stalker/shadow-of-chernobyl.tsx"
+    },
+    "/mods/stalker/$modFolder/mod/$modId": {
+      "filePath": "mods/stalker/$modFolder/mod.$modId.tsx"
     }
   }
 }
