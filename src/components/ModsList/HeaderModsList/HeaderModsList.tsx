@@ -1,4 +1,4 @@
-import { BackButton } from "./BackButton";
+import { BackButton } from "@component/ui/BackButton";
 import { MenuFiltros } from "./MenuFiltros";
 
 export const HeaderModsList = () => {
