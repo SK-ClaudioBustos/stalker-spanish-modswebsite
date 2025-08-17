@@ -18,6 +18,9 @@ export const ModItem = ({ item, folderName }: GameItemProps) => {
           className="aspect-2/3 object-cover w-50"
           src={portadaPath}
           alt={`portada del mod ${titulo}`}
+          fetchPriority="low"
+          decoding="async"
+          loading="lazy"
         />
         <span className="text-gray-400 font-bold">{titulo}</span>
       </article>

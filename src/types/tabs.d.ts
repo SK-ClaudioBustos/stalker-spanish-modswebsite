@@ -1,0 +1,1 @@
+export type TabsValues = "description" | "features" | "installation";

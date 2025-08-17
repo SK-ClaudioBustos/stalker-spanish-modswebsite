@@ -1,9 +1,13 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { Details } from "@pages/Details/Details";
+import { getModDetailsFromArraysMods } from "@services/getModDataFromArraysMods";
+import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute('/mods/stalker/$modFolder/$modId')({
+export const Route = createFileRoute("/mods/stalker/$modFolder/$modId")({
   component: RouteComponent,
-})
+  loader: async ({params}) => getModDetailsFromArraysMods(params.modId, params.modFolder),
+});
 
 function RouteComponent() {
-  return (<div className='bg-primary-dark'>Hello "/mods/stalker/$modFolder/mod/$modId"!</div>);
+  const modData = Route.useLoaderData();
+  return <Details modData={modData} />;
 }
