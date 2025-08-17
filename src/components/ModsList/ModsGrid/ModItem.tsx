@@ -13,7 +13,7 @@ export const ModItem = ({ item, folderName }: GameItemProps) => {
       to="/mods/stalker/$modFolder/$modId"
       params={{ modFolder: folderName, modId: item.id }}
     >
-      <article className="bg-black/80 w-3xs flex flex-col text-center text-balance items-center p-4 border-6 border-double border-gray-400 h-full">
+      <article className="bg-black/80 w-3xs flex flex-col text-center text-balance items-center p-4 border-2 border-primary-light rounded h-full">
         <img
           className="aspect-2/3 object-cover w-50"
           src={portadaPath}
