@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-export const UserCode = (props: SVGProps<SVGSVGElement>) => {
+export const UserCodeIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

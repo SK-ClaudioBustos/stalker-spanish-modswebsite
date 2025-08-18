@@ -1,8 +1,9 @@
 import { SVGProps } from "react";
 
-export const ExternalLink = (props?: SVGProps<SVGSVGElement>) => {
+export const BackArrowIcon = (props?: SVGProps<SVGSVGElement>) => {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -12,13 +13,12 @@ export const ExternalLink = (props?: SVGProps<SVGSVGElement>) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-external-link"
-      {...props}
+      className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left-dashed"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-      <path d="M11 13l9 -9" />
-      <path d="M15 4h5v5" />
+      <path d="M5 12h6m3 0h1.5m3 0h.5" />
+      <path d="M5 12l6 6" />
+      <path d="M5 12l6 -6" />
     </svg>
   );
 };

@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-export const Warning = (props?: SVGProps<SVGSVGElement>) => {
+export const LinkIcon = (props?: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,13 +12,13 @@ export const Warning = (props?: SVGProps<SVGSVGElement>) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-alert-triangle"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-link"
       {...props}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M12 9v4" />
-      <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
-      <path d="M12 16h.01" />
+      <path d="M9 15l6 -6" />
+      <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+      <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
     </svg>
   );
 };

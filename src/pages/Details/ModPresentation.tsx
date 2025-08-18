@@ -1,4 +1,4 @@
-import { UserCode } from "@icons/svg/UserCode";
+import { UserCodeIcon } from "@icons/svg/UserCodeIcon";
 import { Modificacion } from "@tipos/mods";
 
 interface ModPresentationProps
@@ -24,7 +24,7 @@ export const ModPresentation = ({
         <hgroup className="mb-4">
           <h1 className="md:text-4xl text-xl font-bold mb-0">{titulo}</h1>
           <div className="flex items-center gap-2">
-            <UserCode className="size-5" />
+            <UserCodeIcon className="size-5" />
             <span className="text-lg">{autor}</span>
           </div>
         </hgroup>

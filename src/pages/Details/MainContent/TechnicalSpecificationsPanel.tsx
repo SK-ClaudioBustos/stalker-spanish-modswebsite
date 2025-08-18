@@ -1,5 +1,5 @@
-import { ExternalLink } from "@icons/svg/ExternalLink";
-import { Link } from "@icons/svg/Link";
+import { ExternalLinkIcon } from "@icons/svg/ExternalLinkIcon";
+import { LinkIcon } from "@icons/svg/LinkIcon";
 import { Modificacion } from "@tipos/mods";
 import { Notes } from "./Notes";
 
@@ -42,7 +42,7 @@ export const TechnicalSpecificationsPanel = ({
       {/* Enlaces de Descarga */}
       <div className="bg-primary-gray border-1 border-primary-dark rounded-lg p-4">
         <div className="flex gap-2 items-center mb-4">
-          <Link className="size-5 text-primary-dark" />
+          <LinkIcon className="size-5 text-primary-dark" />
           <h3 className="text-primary-dark font-bold">Enlaces</h3>
         </div>
 
@@ -56,7 +56,7 @@ export const TechnicalSpecificationsPanel = ({
               href={link.url}
             >
               <span className="font-bold">{link.texto}</span>
-              <ExternalLink className="size-4" />
+              <ExternalLinkIcon className="size-4" />
             </a>
           ))}
         </div>

@@ -1,11 +1,11 @@
-import { Warning } from "@icons/svg/Warning";
+import { WarningIcon } from "@icons/svg/WarningIcon";
 
 export const WarningDetails = ({ warnings }: { warnings: string[] }) => {
   return (
     <article className="bg-primary-light pt-4 pb-6 px-6 rounded-xl border-1 border-primary-dark mt-6">
       <div className="flex flex-col">
         <header className="flex items-center gap-2 text-center mb-4">
-          <Warning />
+          <WarningIcon />
           <h2 className="text-white font-bold text-xl">
             Aclaraciones Importantes
           </h2>

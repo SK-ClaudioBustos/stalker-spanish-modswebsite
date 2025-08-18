@@ -1,4 +1,4 @@
-import { BackArrow } from "@icons/svg/BackArrow";
+import { BackArrowIcon } from "@icons/svg/BackArrowIcon";
 import { useRouter } from "@tanstack/react-router";
 
 export const BackButton = () => {
@@ -14,7 +14,7 @@ export const BackButton = () => {
       aria-label="Volver una pagina atrás"
       type="button"
     >
-      <BackArrow />
+      <BackArrowIcon />
       <span>Volver</span>
     </button>
   );

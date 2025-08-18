@@ -1,4 +1,4 @@
-import { Image } from "@icons/svg/Image";
+import { ImageIcon } from "@icons/svg/ImageIcon";
 import { useState } from "react";
 
 export const Gallery = ({ galleryItems }: { galleryItems: string[] }) => {
@@ -7,7 +7,7 @@ export const Gallery = ({ galleryItems }: { galleryItems: string[] }) => {
   return (
     <article className="bg-primary-light border-primary-dark border rounded-lg p-4">
       <header className="flex items-center gap-2 text-center mb-4">
-        <Image />
+        <ImageIcon />
         <h2 className="text-white font-bold text-xl">Galería de Imágenes</h2>
       </header>
       <div>
