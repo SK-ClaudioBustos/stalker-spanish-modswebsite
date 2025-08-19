@@ -1,36 +1,49 @@
-import { Modificacion } from "@tipos/mods";
+import { useQuery } from "@tanstack/react-query";
+import { JuegoEnum, TipoMod } from "@tipos/mods";
 import { ReactNode, useState } from "react";
 import { ModsContext, ModsContextType } from "./mods.context";
+import { getModifications } from "@services/getModifications";
 
 interface ModsContextProps {
+  juego: JuegoEnum;
   children: ReactNode;
-  modsCollection: Modificacion[][];
 }
 
-export const ModsContextProvider = ({
-  modsCollection,
-  children,
-}: ModsContextProps) => {
-  const [mods, setMods] = useState<Modificacion[]>(modsCollection[0]);
+export const ModsContextProvider = ({ juego, children }: ModsContextProps) => {
+  const [tipoModifications, setTipoModifications] = useState<TipoMod>(
+    TipoMod.VANILLA_MOD
+  );
+  const {
+    data,
+    isLoading,
+    isError,
+    error,
+  } = useQuery({
+    queryKey: ["mods", juego, tipoModifications.toString()],
+    queryFn: () => getModifications(juego, tipoModifications),
+  });
 
   const handleSelectModsByType = (tipo: string) => {
     switch (tipo) {
       case "VANILLA_MODS":
-        setMods(modsCollection[0]);
+        setTipoModifications(TipoMod.VANILLA_MOD);
         break;
 
       case "HISTORIA":
-        setMods(modsCollection[1]);
+        setTipoModifications(TipoMod.HISTORIA);
         break;
 
       default:
-        setMods(modsCollection[2]);
+        setTipoModifications(TipoMod.FREEPLAY);
         break;
     }
   };
-
+  
   const value: ModsContextType = {
-    mods,
+    mods: isLoading ? [] : data.data,
+    isLoading,
+    isError,
+    error,
     handleSelectModsByType,
   };
 

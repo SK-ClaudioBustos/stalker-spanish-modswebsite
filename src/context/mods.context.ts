@@ -1,13 +1,19 @@
-import { Modificacion } from "@tipos/mods";
 import { createContext, use } from "react";
 
 const initValue: ModsContextType = {
   mods: [],
+  isError: false,
+  isLoading: false,
+  error: null,
+
   handleSelectModsByType: () => {},
 };
 
 export interface ModsContextType {
-  mods: Modificacion[];
+  mods: any[];
+  isLoading: boolean;
+  isError: boolean;
+  error: Error | null;
   handleSelectModsByType: (tipo: string) => void;
 }
 

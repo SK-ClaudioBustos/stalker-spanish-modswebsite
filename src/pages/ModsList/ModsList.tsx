@@ -1,4 +1,4 @@
-import { ModsGrid } from "@component/ModsList/ModsGrid/ModsGrid";
+import { ModsGrid } from "@pages/ModsList/ModsGrid/ModsGrid";
 import { HeaderModsList } from "./HeaderModsList/HeaderModsList";
 
 export const ModsList = () => {

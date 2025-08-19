@@ -1,25 +1,26 @@
-import { ModsList } from "@component/ModsList/ModsList";
 import { ModsContextProvider } from "@context/mods.provider";
-import COP_MODS from "@data/mods/COP/cop_mods";
-import CS_MODS from "@data/mods/CS/cs_mods";
-import SOC_MODS from "@data/mods/SOC/soc_mods";
+import { ModsList } from "@pages/ModsList/ModsList";
 import { createFileRoute } from "@tanstack/react-router";
-import { Modificacion } from "@tipos/mods";
+import { JuegoEnum } from "@tipos/mods";
 
 export const Route = createFileRoute("/mods/stalker/$modFolder/")({
   component: RouteComponent,
+  loader: async ({ params }) => {
+    switch (params.modFolder) {
+      case "shadow-of-chernobyl":
+        return JuegoEnum.SHADOW_OF_CHERNOBYL;
+      case "clear-sky":
+        return JuegoEnum.CLEAR_SKY;
+      default:
+        return JuegoEnum.CALL_OF_PRYPIAT;
+    }
+  },
 });
 
 function RouteComponent() {
-  const { modFolder } = Route.useParams();
-  const MODS_MAP: Record<string, Modificacion[][]> = {
-    "shadow-of-chernobyl": SOC_MODS,
-    "call-of-pripyat": COP_MODS,
-    "clear-sky": CS_MODS,
-  };
-  const MODS = modFolder ? MODS_MAP[modFolder] : [];
+  const juego = Route.useLoaderData();
   return (
-    <ModsContextProvider modsCollection={MODS}>
+    <ModsContextProvider juego={juego}>
       <ModsList />
     </ModsContextProvider>
   );
