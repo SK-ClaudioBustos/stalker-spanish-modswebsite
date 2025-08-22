@@ -1,3 +1,4 @@
+import { LazyImage } from "@component/ui/LazyImage";
 import { ImageIcon } from "@icons/svg/ImageIcon";
 import { useState } from "react";
 
@@ -13,35 +14,31 @@ export const Gallery = ({ galleryItems }: { galleryItems: string[] }) => {
       <div>
         <div className="space-y-4">
           <div className="aspect-video rounded-lg overflow-hidden bg-primary-custom">
-            <img
-              src={galleryItems[selectedImageIndex]}
-              alt={`Screenshot ${selectedImageIndex + 1}`}
-              className="w-full h-full object-cover"
-              decoding="async"
-              loading="lazy"
+            <LazyImage
+              imgPath={`/img/${galleryItems[selectedImageIndex]}.webp`}
+              altText={`Screenshot ${selectedImageIndex + 1}`}
             />
           </div>
           <div className="grid grid-cols-6 gap-2">
-            {galleryItems.map((image, index) => (
-              <button
-                key={index}
-                onClick={() => handleImageChange(index)}
-                className={`aspect-video rounded overflow-hidden border-2 transition-all ${
-                  selectedImageIndex === index
-                    ? "border-light-gray ring-2 ring-light-gray/50"
-                    : "border-primary-light hover:border-light-gray"
-                }`}
-              >
-                <img
-                  src={image || "/placeholder.svg"}
-                  alt={`Thumbnail ${index + 1}`}
-                  className="w-full h-full object-cover"
-                  decoding="async"
-                  loading="lazy"
-                  fetchPriority="low"
-                />
-              </button>
-            ))}
+            {galleryItems.map((image, index) => {
+              const imgPath = `/img/${image}.webp`;
+              return (
+                <button
+                  key={index}
+                  onClick={() => handleImageChange(index)}
+                  className={`aspect-video rounded overflow-hidden border-2 transition-all ${
+                    selectedImageIndex === index
+                      ? "border-light-gray ring-2 ring-light-gray/50"
+                      : "border-primary-light hover:border-light-gray"
+                  }`}
+                >
+                  <LazyImage
+                    imgPath={imgPath}
+                    altText={`Thumbnail ${index + 1}`}
+                  />
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>

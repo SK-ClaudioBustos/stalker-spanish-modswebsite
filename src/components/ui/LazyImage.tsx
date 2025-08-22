@@ -12,10 +12,7 @@ export const LazyImage = ({
 
   useEffect(() => {
     const getImage = async () => {
-      await import(
-        /* @vite-ignore */
-        `/img/${imgPath}/portada.webp`
-      ).then((image) => {
+      await import(imgPath).then((image) => {
         setImage(image.default);
         setLoading(false);
       });
@@ -44,7 +41,7 @@ export const LazyImage = ({
 
   return (
     <img
-      className="aspect-2/3 object-cover w-50"
+      className="w-full h-full object-cover"
       src={image}
       alt={altText}
       fetchPriority="low"
