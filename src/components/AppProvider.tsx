@@ -1,6 +1,13 @@
+import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { routeTree } from "src/routeTree.gen";
+import { ApolloProvider } from "@apollo/client/react";
+
+const client = new ApolloClient({
+  link: new HttpLink({ uri: import.meta.env.VITE_SCHEMA_URL }),
+  cache: new InMemoryCache(),
+});
 
 const router = createRouter({ routeTree });
 const queryClient = new QueryClient();
@@ -13,8 +20,10 @@ declare module "@tanstack/react-router" {
 
 export const AppProvider = () => {
   return (
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
+    <ApolloProvider client={client}>
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    </ApolloProvider>
   );
 };
