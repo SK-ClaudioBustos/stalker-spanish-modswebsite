@@ -1,13 +1,10 @@
+import { useDetailsContext } from "@context/details.context";
 import { ExternalLinkIcon } from "@icons/svg/ExternalLinkIcon";
 import { LinkIcon } from "@icons/svg/LinkIcon";
-import { Modificacion } from "@tipos/mods";
 import { Notes } from "./Notes";
 
-export const TechnicalSpecificationsPanel = ({
-  modData,
-}: {
-  modData: Modificacion;
-}) => {
+export const TechnicalSpecificationsPanel = () => {
+  const { isStandalone, fecha_lanzamiento, traduccion, enlaces } = useDetailsContext();
   return (
     <div className="space-y-6">
       {/* Ficha Técnica */}
@@ -22,18 +19,16 @@ export const TechnicalSpecificationsPanel = ({
             <div>
               <span>Tipo</span>
               <p className="font-semibold">
-                {modData.isStandalone ? "Standalone" : "No Standalone"}
+                {isStandalone ? "Standalone" : "No Standalone"}
               </p>
             </div>
             <div>
               <span>Lanzamiento</span>
-              <p className="font-semibold">
-                {modData.fecha_lanzamiento}
-              </p>
+              <p className="font-semibold">{fecha_lanzamiento}</p>
             </div>
             <div>
               <span>Traduccion por</span>
-              <p className="font-semibold">{modData.traduccion}</p>
+              <p className="font-semibold">{traduccion}</p>
             </div>
           </div>
         </div>
@@ -47,7 +42,7 @@ export const TechnicalSpecificationsPanel = ({
         </div>
 
         <div className="space-y-3">
-          {modData.enlaces.map((link, index) => (
+          {enlaces.map((link, index) => (
             <a
               key={index}
               target="_blank"

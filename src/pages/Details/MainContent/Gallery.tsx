@@ -1,9 +1,11 @@
 import { LazyImage } from "@component/ui/LazyImage";
+import { useDetailsContext } from "@context/details.context";
 import { ImageIcon } from "@icons/svg/ImageIcon";
 import { useState } from "react";
 
-export const Gallery = ({ galleryItems }: { galleryItems: string[] }) => {
+export const Gallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const { imagenesGaleria: galleryItems } = useDetailsContext();
   const handleImageChange = (index: number) => setSelectedImageIndex(index);
   return (
     <article className="bg-primary-light border-primary-dark border rounded-lg p-4">

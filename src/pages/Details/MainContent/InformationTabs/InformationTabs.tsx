@@ -1,10 +1,9 @@
 import { TABS } from "@data/tabs";
-import { Modificacion } from "@tipos/mods";
 import { TabsValues } from "@tipos/tabs";
 import { useState } from "react";
 import { TabContent } from "./TabContent";
 
-export const InformationTabs = ({ modData }: { modData: Modificacion }) => {
+export const InformationTabs = () => {
   const [tabSelected, setTabSelected] = useState<TabsValues>("description");
 
   const handleTabChange = (value: string) => {
@@ -26,10 +25,7 @@ export const InformationTabs = ({ modData }: { modData: Modificacion }) => {
           </button>
         ))}
       </nav>
-      <TabContent
-        modData={modData}
-        tabSelected={tabSelected}
-      />
+      <TabContent tabSelected={tabSelected} />
     </div>
   );
 };

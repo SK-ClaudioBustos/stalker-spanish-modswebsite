@@ -1,21 +1,18 @@
-import { Modificacion } from "@tipos/mods";
-import { InformationTabs } from "./InformationTabs/InformationTabs";
 import { Gallery } from "./Gallery";
-import { WarningDetails } from "./WarningDetails";
+import { InformationTabs } from "./InformationTabs/InformationTabs";
+import { WarningsBox } from "./WarningsBox/WarningsBox";
 
-export const MainContent = ({ modData }: { modData: Modificacion }) => {
+export const MainContent = () => {
   return (
     <main className="lg:col-span-2 space-y-8">
       {/* Tabs de Información */}
-      <InformationTabs modData={modData} />
+      <InformationTabs />
 
       {/* Información Adicional */}
-      {modData.aclaraciones !== undefined && (
-        <WarningDetails warnings={modData.aclaraciones} />
-      )}
+      <WarningsBox />
 
       {/* Galería */}
-      <Gallery galleryItems={modData.imagenesGaleria} />
+      <Gallery />
     </main>
   );
 };

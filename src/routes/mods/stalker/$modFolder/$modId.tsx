@@ -1,7 +1,7 @@
+import { DetailsProvider } from "@context/details.provider";
 import { Details } from "@pages/Details/Details";
-import { getModification } from "@services/getModification";
-import { useQuery } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";
+import { useGetModificationQuery } from "src/generated/graphql";
 
 export const Route = createFileRoute("/mods/stalker/$modFolder/$modId")({
   component: RouteComponent,
@@ -9,18 +9,33 @@ export const Route = createFileRoute("/mods/stalker/$modFolder/$modId")({
 
 function RouteComponent() {
   const { modId } = Route.useParams();
-  const { data, error, isError, isLoading } = useQuery({
-    queryKey: ["getMod", modId],
-    queryFn: async () => getModification(modId),
+  const {
+    data: modificationData,
+    loading: loadingModificationData,
+    error: errorModificationData,
+  } = useGetModificationQuery({
+    variables: {
+      args: {
+        id: modId,
+      },
+    },
   });
 
-  if(isLoading){
+  if (loadingModificationData) {
     return <div className="bg-primary-dark">Loading...</div>;
   }
 
-  if (isError) {
-    return <div className="bg-primary-dark">Error: {error.message}</div>;
+  if (errorModificationData) {
+    return (
+      <div className="bg-primary-dark">
+        Error: {errorModificationData.message}
+      </div>
+    );
   }
 
-  return <Details modData={data.modification} />;
+  return (
+    <DetailsProvider modDetails={modificationData?.getModification}>
+      <Details />
+    </DetailsProvider>
+  );
 }

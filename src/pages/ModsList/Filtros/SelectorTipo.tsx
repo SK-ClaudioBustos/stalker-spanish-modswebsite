@@ -1,13 +1,13 @@
 import { useModsContext } from "@context/mods.context";
-import { TipoMod } from "@tipos/mods";
 import { ChangeEventHandler, useState } from "react";
+import { TipoEnum } from "src/generated/graphql";
 
 export const SelectorTipo = () => {
   const { handleSelectModsByType } = useModsContext();
-  const [tipo, setTipo] = useState<TipoMod>(TipoMod.VANILLA_MOD);
+  const [tipo, setTipo] = useState<TipoEnum>(TipoEnum.VanillaMod);
 
   const handleChange: ChangeEventHandler<HTMLSelectElement> = (e) => {
-    const tipoSeleccionado = e.target.value as unknown as TipoMod;
+    const tipoSeleccionado = e.target.value as unknown as TipoEnum;
     setTipo(tipoSeleccionado);
     handleSelectModsByType(e.target.value);
   };

@@ -1,16 +1,9 @@
 import { LazyImage } from "@component/ui/LazyImage";
+import { useDetailsContext } from "@context/details.context";
 import { UserCodeIcon } from "@icons/svg/UserCodeIcon";
-import { Modificacion } from "@tipos/mods";
 
-interface ModPresentationProps
-  extends Pick<Modificacion, "titulo" | "autor" | "sinopsis" | "portadaPath"> {}
-
-export const ModPresentation = ({
-  autor,
-  sinopsis,
-  titulo,
-  portadaPath,
-}: ModPresentationProps) => {
+export const ModPresentation = () => {
+  const { autor, sinopsis, titulo, portadaPath } = useDetailsContext();
   const imgPath = `/img/${portadaPath}/portada.webp`;
   return (
     <header className="px-6 py-12 bg-primary-dark flex flex-row gap-4 flex-wrap mb-6 rounded-md">
