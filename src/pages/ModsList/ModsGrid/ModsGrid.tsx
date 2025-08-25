@@ -3,26 +3,29 @@ import { useLocation } from "@tanstack/react-router";
 import { ModItem } from "./ModItem";
 
 export const ModsGrid = () => {
-  const { mods, isError, isLoading, error } = useModsContext();
+  const { mods, isLoading, error } = useModsContext();
   const { pathname } = useLocation();
   const folderName = pathname.split("/")[3];
-  
-  if (isLoading)
+
+  if (isLoading) {
     return (
       <div className="bg-primary-dark">
         <span className="text-white">Loading...</span>
       </div>
     );
-  if (isError)
+  }
+
+  if (error) {
     return (
       <div className="bg-primary-dark">
         <span className="text-white">Error: {error?.message}</span>
       </div>
     );
-
+  }
+  
   return (
     <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] justify-items-center gap-x-4 gap-y-7">
-      {mods.map((item) => (
+      {mods?.getModifications.modifications.map((item) => (
         <ModItem folderName={folderName} item={item} key={item.id} />
       ))}
     </div>

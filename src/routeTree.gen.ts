@@ -8,82 +8,45 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-// Import Routes
+import { Route as rootRouteImport } from './routes/__root'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as ModsStalkerModFolderIndexRouteImport } from './routes/mods/stalker/$modFolder/index'
+import { Route as ModsStalkerModFolderModIdRouteImport } from './routes/mods/stalker/$modFolder/$modId'
 
-import { Route as rootRoute } from './routes/__root'
-import { Route as IndexImport } from './routes/index'
-import { Route as ModsStalkerModFolderIndexImport } from './routes/mods/stalker/$modFolder/index'
-import { Route as ModsStalkerModFolderModIdImport } from './routes/mods/stalker/$modFolder/$modId'
-
-// Create/Update Routes
-
-const IndexRoute = IndexImport.update({
+const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRoute,
+  getParentRoute: () => rootRouteImport,
 } as any)
-
-const ModsStalkerModFolderIndexRoute = ModsStalkerModFolderIndexImport.update({
-  id: '/mods/stalker/$modFolder/',
-  path: '/mods/stalker/$modFolder/',
-  getParentRoute: () => rootRoute,
-} as any)
-
-const ModsStalkerModFolderModIdRoute = ModsStalkerModFolderModIdImport.update({
-  id: '/mods/stalker/$modFolder/$modId',
-  path: '/mods/stalker/$modFolder/$modId',
-  getParentRoute: () => rootRoute,
-} as any)
-
-// Populate the FileRoutesByPath interface
-
-declare module '@tanstack/react-router' {
-  interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-    '/mods/stalker/$modFolder/$modId': {
-      id: '/mods/stalker/$modFolder/$modId'
-      path: '/mods/stalker/$modFolder/$modId'
-      fullPath: '/mods/stalker/$modFolder/$modId'
-      preLoaderRoute: typeof ModsStalkerModFolderModIdImport
-      parentRoute: typeof rootRoute
-    }
-    '/mods/stalker/$modFolder/': {
-      id: '/mods/stalker/$modFolder/'
-      path: '/mods/stalker/$modFolder'
-      fullPath: '/mods/stalker/$modFolder'
-      preLoaderRoute: typeof ModsStalkerModFolderIndexImport
-      parentRoute: typeof rootRoute
-    }
-  }
-}
-
-// Create and export the route tree
+const ModsStalkerModFolderIndexRoute =
+  ModsStalkerModFolderIndexRouteImport.update({
+    id: '/mods/stalker/$modFolder/',
+    path: '/mods/stalker/$modFolder/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ModsStalkerModFolderModIdRoute =
+  ModsStalkerModFolderModIdRouteImport.update({
+    id: '/mods/stalker/$modFolder/$modId',
+    path: '/mods/stalker/$modFolder/$modId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/mods/stalker/$modFolder/$modId': typeof ModsStalkerModFolderModIdRoute
   '/mods/stalker/$modFolder': typeof ModsStalkerModFolderIndexRoute
 }
-
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/mods/stalker/$modFolder/$modId': typeof ModsStalkerModFolderModIdRoute
   '/mods/stalker/$modFolder': typeof ModsStalkerModFolderIndexRoute
 }
-
 export interface FileRoutesById {
-  __root__: typeof rootRoute
+  __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/mods/stalker/$modFolder/$modId': typeof ModsStalkerModFolderModIdRoute
   '/mods/stalker/$modFolder/': typeof ModsStalkerModFolderIndexRoute
 }
-
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
@@ -99,11 +62,36 @@ export interface FileRouteTypes {
     | '/mods/stalker/$modFolder/'
   fileRoutesById: FileRoutesById
 }
-
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ModsStalkerModFolderModIdRoute: typeof ModsStalkerModFolderModIdRoute
   ModsStalkerModFolderIndexRoute: typeof ModsStalkerModFolderIndexRoute
+}
+
+declare module '@tanstack/react-router' {
+  interface FileRoutesByPath {
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mods/stalker/$modFolder/': {
+      id: '/mods/stalker/$modFolder/'
+      path: '/mods/stalker/$modFolder'
+      fullPath: '/mods/stalker/$modFolder'
+      preLoaderRoute: typeof ModsStalkerModFolderIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mods/stalker/$modFolder/$modId': {
+      id: '/mods/stalker/$modFolder/$modId'
+      path: '/mods/stalker/$modFolder/$modId'
+      fullPath: '/mods/stalker/$modFolder/$modId'
+      preLoaderRoute: typeof ModsStalkerModFolderModIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+  }
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -111,31 +99,6 @@ const rootRouteChildren: RootRouteChildren = {
   ModsStalkerModFolderModIdRoute: ModsStalkerModFolderModIdRoute,
   ModsStalkerModFolderIndexRoute: ModsStalkerModFolderIndexRoute,
 }
-
-export const routeTree = rootRoute
+export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-/* ROUTE_MANIFEST_START
-{
-  "routes": {
-    "__root__": {
-      "filePath": "__root.tsx",
-      "children": [
-        "/",
-        "/mods/stalker/$modFolder/$modId",
-        "/mods/stalker/$modFolder/"
-      ]
-    },
-    "/": {
-      "filePath": "index.tsx"
-    },
-    "/mods/stalker/$modFolder/$modId": {
-      "filePath": "mods/stalker/$modFolder/$modId.tsx"
-    },
-    "/mods/stalker/$modFolder/": {
-      "filePath": "mods/stalker/$modFolder/index.tsx"
-    }
-  }
-}
-ROUTE_MANIFEST_END */

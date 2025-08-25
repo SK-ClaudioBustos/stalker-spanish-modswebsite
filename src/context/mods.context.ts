@@ -1,19 +1,19 @@
+import { ApolloError } from "@apollo/client";
 import { createContext, use } from "react";
+import { GetModificationsQuery } from "src/generated/graphql";
 
 const initValue: ModsContextType = {
-  mods: [],
-  isError: false,
+  mods: undefined,
   isLoading: false,
-  error: null,
+  error: undefined,
 
   handleSelectModsByType: () => {},
 };
 
 export interface ModsContextType {
-  mods: any[];
+  mods: GetModificationsQuery | undefined;
   isLoading: boolean;
-  isError: boolean;
-  error: Error | null;
+  error: ApolloError | undefined;
   handleSelectModsByType: (tipo: string) => void;
 }
 

@@ -1,9 +1,11 @@
 import { LazyImage } from "@component/ui/LazyImage";
 import { Link } from "@tanstack/react-router";
-import { Modificacion } from "@tipos/mods";
+import {
+  ModificationItemOutput
+} from "src/generated/graphql";
 
 interface GameItemProps {
-  item: Modificacion;
+  item: ModificationItemOutput;
   folderName: string;
 }
 
