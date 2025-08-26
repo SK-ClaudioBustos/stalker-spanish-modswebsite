@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "generate": "graphql-codegen --config codegen.ts",
-    "init": "tsc -b && vite build graphql-codegen --config codegen.ts"
+    "init": "graphql-codegen --config codegen.ts && tsc -b && vite build"
   },
   "dependencies": {
     "@apollo/client": "^3.3.7",
