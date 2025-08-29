@@ -17,13 +17,13 @@ export const Gallery = () => {
         <div className="space-y-4">
           <div className="aspect-video rounded-lg overflow-hidden bg-primary-custom">
             <LazyImage
-              imgPath={`/img/${galleryItems[selectedImageIndex]}.webp`}
+              imgPath={`../assets/img/games/${galleryItems[selectedImageIndex]}.webp`}
               altText={`Screenshot ${selectedImageIndex + 1}`}
             />
           </div>
           <div className="grid grid-cols-6 gap-2">
             {galleryItems.map((image, index) => {
-              const imgPath = `/img/${image}.webp`;
+              const imgPath = `../assets/img/games/${image}.webp`;
               return (
                 <button
                   key={index}
