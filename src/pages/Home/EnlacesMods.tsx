@@ -1,6 +1,6 @@
 import { GAMES } from "@data/games.ts";
 import { TitleContainer } from "@component/ui/TitleContainer";
-import Title from "@assets/img/seleccione_un_juego_title.webp";
+import Title from "/img/seleccione_un_juego_title.webp";
 import { Link } from "@tanstack/react-router";
 
 export const EnlacesMods = () => {
@@ -20,6 +20,8 @@ export const EnlacesMods = () => {
               src={item.imgPath}
               alt={`imagen de ${item.title}`}
               loading="lazy"
+              fetchPriority="low"
+              decoding="async"
             />
           </Link>
         ))}

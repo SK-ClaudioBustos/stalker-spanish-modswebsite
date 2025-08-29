@@ -1,6 +1,6 @@
-import SOC from "@soc/portrait.webp";
-import CS from "@cs/portrait.webp";
-import COP from "@cop/portrait.webp";
+import SOC from "/img/games/SOC/portrait.webp";
+import CS from "/img/games/CS/portrait.webp";
+import COP from "/img/games/COP/portrait.webp";
 
 export const GAMES = [
   {
