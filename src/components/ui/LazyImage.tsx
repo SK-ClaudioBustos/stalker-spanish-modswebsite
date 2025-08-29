@@ -1,4 +1,3 @@
-import { getImageUrl } from "src/utils/image-util";
 export const LazyImage = ({
   imgPath,
   altText,
@@ -6,7 +5,6 @@ export const LazyImage = ({
   imgPath: string;
   altText: string;
 }) => {
-  // const imgSrc = getImageUrl(imgPath);
   return (
     <div className="w-full h-full">
       <img

@@ -4,7 +4,7 @@ import { UserCodeIcon } from "@icons/svg/UserCodeIcon";
 
 export const ModPresentation = () => {
   const { autor, sinopsis, titulo, portadaPath } = useDetailsContext();
-  const imgPath = `../assets/img/games/${portadaPath}/portada.webp`;
+  const imgPath = `/img/games/${portadaPath}/portada.webp`;
   return (
     <header className="px-6 py-12 bg-primary-dark flex flex-row gap-4 flex-wrap mb-6 rounded-md">
       <picture className="aspect-2/3 object-cover w-50">
