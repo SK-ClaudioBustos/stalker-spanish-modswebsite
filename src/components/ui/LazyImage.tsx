@@ -6,12 +6,12 @@ export const LazyImage = ({
   imgPath: string;
   altText: string;
 }) => {
-  const imgSrc = getImageUrl(imgPath);
+  // const imgSrc = getImageUrl(imgPath);
   return (
     <div className="w-full h-full">
       <img
         className={`w-full h-full object-cover`}
-        src={imgSrc}
+        src={imgPath}
         alt={altText}
         fetchPriority="low"
         decoding="async"
