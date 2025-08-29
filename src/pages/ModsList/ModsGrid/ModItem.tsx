@@ -11,7 +11,7 @@ interface GameItemProps {
 
 export const ModItem = ({ item, folderName }: GameItemProps) => {
   const { portadaPath, titulo } = item;
-  const imgPath = `/img/${portadaPath}/portada.webp`;
+  const imgPath = `../assets/img/games/${portadaPath}/portada.webp`;
   return (
     <Link
       to="/mods/stalker/$modFolder/$modId"
