@@ -10,6 +10,9 @@ export const TitleContainer = ({
       <img
         src={imgSrc}
         alt={alt}
+        fetchPriority="high"
+        loading="eager"
+        decoding="sync"
       />
     </div>
   );
