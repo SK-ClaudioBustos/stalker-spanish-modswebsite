@@ -3,7 +3,7 @@ import LogoCanal from "@assets/logo_canal.webp";
 
 export const SeccionAgradecimientos = () => {
   return (
-    <section className="flex flex-col w-fit px-8 py-4 rounded-lg bg-primary-dark">
+    <section className="flex flex-col w-fit md:px-8 px-4 md:py-4 py-2 rounded-lg bg-primary-dark">
       <h3 className="title-class">Palabras finales</h3>
       <p className="w-auto max-w-[65ch] hyphens-auto text-justify text-pretty leading-[2.2ch]">
         Ahora si me despido dejando un agradecimiento enorme a todos los que
@@ -16,7 +16,7 @@ export const SeccionAgradecimientos = () => {
         href="https://www.youtube.com/@elgauchostalker"
         target="_blank"
         rel="noopener noreferrer"
-        className="self-center w-fit h-20 flex items-center justify-center gap-2 mt-5"
+        className="self-center w-fit h-20 flex md:flex-row flex-col md:text-start text-center items-center justify-center gap-2 mt-5"
       >
         <Youtube className="max-w-16 min-w-8 w-[12vw] h-auto" />
         <span className="fluid-sm">

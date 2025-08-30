@@ -6,7 +6,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Header />
-      <main className="min-h-screen px-8">{children}</main>
+      <main className="min-h-screen md:px-8 px-4">{children}</main>
       <Footer />
     </>
   );
