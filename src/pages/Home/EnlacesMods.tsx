@@ -13,7 +13,7 @@ export const EnlacesMods = () => {
             to={item.url}
             rel="noopener noreferrer"
             key={item.year}
-            className="w-72 aspect-3/4 cursor-pointer"
+            className="w-72 aspect-3/4 cursor-pointer bg-primary-dark py-4 rounded-2xl"
           >
             <img
               className="size-full"

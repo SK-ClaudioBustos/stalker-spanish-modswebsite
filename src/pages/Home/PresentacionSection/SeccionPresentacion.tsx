@@ -1,9 +1,9 @@
 export const SeccionPresentacion = () => {
   return (
     <section className="w-fit">
-      <h4 className="text-center mb-2 underline">
+      <h3 className="title-class">
         Bienvenidos
-      </h4>
+      </h3>
       <p className="w-auto max-w-[65ch] hyphens-auto text-justify text-pretty leading-[2.2ch]">
         Hola camaradas, soy el Gaucho Stalker, en esta pagina van a encontrar una 
         recopilación de todos los mods que han sido traducidos al español. Una
@@ -25,7 +25,6 @@ export const SeccionPresentacion = () => {
         Por lo que si algún link falla te puedes contactar conmigo o consultar
         en estos grupos que a continuación dejaré.
       </p>
-      <br />
     </section>
   );
 };

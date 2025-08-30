@@ -8,11 +8,21 @@ export const AclaracionesSection = () => {
       <TitleContainer alt="titulo seccion aclaraciones" imgSrc={Title} />
       <div className="mt-8 flex flex-col items-center gap-8">
         {ACLARACIONES.map((item, index) => (
-          <article key={index} className="w-10/12 relative">
-            <img className="w-full" src={item.imgSrc} loading="lazy" fetchPriority="low" decoding="async" alt={`titulo sobre ${item.titulo}`} />
-            <div className="sm:bg-primary/60 bg-primary p-3.5 z-10 bottom-0 static sm:absolute">
-              <h2>{item.titulo}</h2>
-              <p>{item.aclaracion}</p>
+          <article
+            key={index}
+            className="w-11/12 rounded-2xl bg-primary-light py-8 relative"
+          >
+            <img
+              src={item.imgSrc}
+              loading="lazy"
+              fetchPriority="low"
+              decoding="async"
+              alt={`titulo sobre ${item.titulo}`}
+              className="w-full"
+            />
+            <div className="mb-8 p-4 z-10 bottom-0 absolute bg-linear-to-t from-primary to-transparent">
+              <h2 className="font-semibold underline">{item.titulo}</h2>
+              <p className="font-light text-justify">{item.aclaracion}</p>
             </div>
           </article>
         ))}

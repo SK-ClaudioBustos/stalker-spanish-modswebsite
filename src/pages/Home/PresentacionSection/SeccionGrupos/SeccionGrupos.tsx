@@ -4,7 +4,7 @@ import { GroupItem } from "./GroupItem";
 export const SeccionGrupos = () => {
   return (
     <div className="w-fit">
-      <h4 className="text-center underline mb-2">
+      <h4 className="text-center font-bold mb-2">
         ¡Síganlos, apóyenlos, quiéranse y sobre todo cada aporte que hagan
         cuenta!
       </h4>

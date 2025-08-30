@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: system-ui, "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--color-primary-gray);
   scroll-behavior: smooth;
 

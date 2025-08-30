@@ -1,3 +1,7 @@
 .title-container {
     @apply mt-8 mx-4 mb-0 flex justify-center h-15;
 }
+
+.title-class {
+    @apply text-2xl mb-4 font-bold;
+}
