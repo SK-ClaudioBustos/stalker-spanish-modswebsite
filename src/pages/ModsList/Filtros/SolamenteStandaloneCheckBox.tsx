@@ -1,6 +1,6 @@
 export const SolamenteStandaloneCheckBox = () => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex md:items-center justify-between gap-2">
       <label
         htmlFor="is_standalone"
         aria-label="Mostrar solamente los mods que sean standalone"

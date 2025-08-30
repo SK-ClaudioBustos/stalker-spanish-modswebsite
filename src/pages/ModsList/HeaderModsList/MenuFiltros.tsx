@@ -3,7 +3,7 @@ import { SolamenteStandaloneCheckBox } from "../Filtros/SolamenteStandaloneCheck
 
 export const MenuFiltros = () => {
   return (
-    <div className="flex justify-between w-md">
+    <div className="flex md:justify-between md:flex-row flex-col md:gap-0 gap-2 md:w-md">
       <SolamenteStandaloneCheckBox />
       <SelectorTipo />
     </div>
