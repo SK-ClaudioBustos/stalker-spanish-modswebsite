@@ -1,10 +1,10 @@
 import { SelectorTipo } from "../Filtros/SelectorTipo";
-import { SolamenteStandaloneCheckBox } from "../Filtros/SolamenteStandaloneCheckBox";
+import { SelectorStandalone } from "../Filtros/SelectorStandalone";
 
 export const MenuFiltros = () => {
   return (
-    <div className="flex md:justify-between md:flex-row flex-col md:gap-0 gap-2 md:w-md">
-      <SolamenteStandaloneCheckBox />
+    <div className="flex md:justify-between md:flex-row flex-col md:gap-0 gap-2 md:w-lg">
+      <SelectorStandalone />
       <SelectorTipo />
     </div>
   );

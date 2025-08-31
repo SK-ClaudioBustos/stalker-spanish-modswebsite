@@ -13,7 +13,7 @@ export const SelectorTipo = () => {
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 justify-between">
       <label
         htmlFor="countries"
         className="text-sm font-medium text-gray-900 dark:text-white"
@@ -24,7 +24,7 @@ export const SelectorTipo = () => {
         id="countries"
         value={tipo}
         onChange={handleChange}
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"
+        className="selector"
       >
         <option value="VANILLA_MODS">Vanilla + Mods</option>
         <option value="HISTORIA">Historia</option>

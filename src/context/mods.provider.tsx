@@ -16,6 +16,10 @@ export const ModsContextProvider = ({ juego, children }: ModsContextProps) => {
     TipoEnum.VanillaMod
   );
 
+  const [standaloneFilter, setStandaloneFilter] = useState<boolean | undefined>(
+    undefined
+  );
+
   const {
     data: modifications,
     loading: loadingModifications,
@@ -25,6 +29,7 @@ export const ModsContextProvider = ({ juego, children }: ModsContextProps) => {
       params: {
         juego,
         tipo: tipoModifications,
+        isStandalone: standaloneFilter,
       },
     },
   });
@@ -41,7 +46,23 @@ export const ModsContextProvider = ({ juego, children }: ModsContextProps) => {
 
       default:
         setTipoModifications(TipoEnum.Freeplay);
+    }
+  };
+
+  const handleChangeStandaloneFilter = (filter: string) => {
+    setStandaloneFilter(false);
+    switch (filter) {
+      case "ALL":
+        setStandaloneFilter(undefined);
         break;
+
+      case "STANDALONE":
+        setStandaloneFilter(true);
+        break;
+
+      default:
+        // Los mods que no son standalone
+        setStandaloneFilter(false);
     }
   };
 
@@ -50,6 +71,7 @@ export const ModsContextProvider = ({ juego, children }: ModsContextProps) => {
     isLoading: loadingModifications,
     error: errorModifications,
     handleSelectModsByType,
+    handleChangeStandaloneFilter,
   };
 
   return <ModsContext value={value}>{children}</ModsContext>;

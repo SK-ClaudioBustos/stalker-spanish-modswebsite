@@ -6,8 +6,8 @@ const initValue: ModsContextType = {
   mods: undefined,
   isLoading: false,
   error: undefined,
-
   handleSelectModsByType: () => {},
+  handleChangeStandaloneFilter: () => {}
 };
 
 export interface ModsContextType {
@@ -15,6 +15,7 @@ export interface ModsContextType {
   isLoading: boolean;
   error: ApolloError | undefined;
   handleSelectModsByType: (tipo: string) => void;
+  handleChangeStandaloneFilter: (filter: string) => void;
 }
 
 export const ModsContext = createContext<ModsContextType>(initValue);
