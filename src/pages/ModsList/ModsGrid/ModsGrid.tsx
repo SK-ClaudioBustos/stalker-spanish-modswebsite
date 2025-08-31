@@ -22,6 +22,14 @@ export const ModsGrid = () => {
       </div>
     );
   }
+
+  if(!mods?.getModifications.modificationsCount) {
+    return(
+      <h1 className="text-primary-dark">
+        No hay modificaciones para mostrar
+      </h1>
+    );
+  }
   
   return (
     <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] justify-items-center gap-x-4 gap-y-7">
