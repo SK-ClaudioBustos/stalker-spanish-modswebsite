@@ -20,7 +20,7 @@ export const AclaracionesSection = () => {
               alt={`titulo sobre ${item.titulo}`}
               className="w-full"
             />
-            <div className="mds:mb-8 p-4 z-10 bottom-0 md:absolute bg-linear-to-t from-primary to-transparent">
+            <div className="mds:mb-8 p-4 z-10 bottom-0 md:absolute bg-linear-to-t from-primary to-transparent rounded-b-2xl">
               <h2 className="font-semibold underline">{item.titulo}</h2>
               <p className="font-light text-justify">{item.aclaracion}</p>
             </div>
